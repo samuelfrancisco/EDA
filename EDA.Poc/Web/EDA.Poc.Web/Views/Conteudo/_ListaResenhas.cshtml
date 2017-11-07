@@ -1,0 +1,17 @@
+﻿@model List<EDA.Poc.Pagamentos.ReadModel.PaginaDeDetalhesDoConteudo.Resenha>
+
+@using System.Linq;
+
+@foreach (var resenha in Model.OrderByDescending(x => x.Data))
+{
+    <li>
+        <figure class="col-1 col-sm-2 col-tablet-3">
+            <img src="@resenha.ImagemDoUsuario" alt="@resenha.NomeUsuario">
+        </figure>
+        <article class="col-11 col-sm-10 col-tablet-9">
+            <p class="secondary-color"><strong>@resenha.NomeUsuario - @resenha.DataLabel</strong></p>
+            <p>@resenha.Conteudo</p>
+            <span data-avaliacao="@resenha.Avaliacao" class="estrelas fa primary-color"></span>
+        </article>
+    </li>
+}

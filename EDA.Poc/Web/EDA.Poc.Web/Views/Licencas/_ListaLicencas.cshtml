@@ -1,0 +1,56 @@
+﻿@model List<EDA.Poc.Pagamentos.ReadModel.PaginaDeLicencas.DetalhesDaLicenca>
+@{
+    var qntRegistros = @Model.Count();
+}
+
+<nav class="v-align-middle">
+    @if (@qntRegistros == 0) {
+        <span>nenhum registro encontrado</span>
+    }
+    else if (@qntRegistros == 1) {
+        <span>@qntRegistros registro encontrado</span>
+        @*<button class="btn-default inline">Exportar para Excel</button>*@
+    }else {
+        <span>@qntRegistros registros encontrados</span>
+        @*<button class="btn-default inline">Exportar para Excel</button>*@
+    }
+</nav>
+<div class="table-gap">
+    <table class="table-admin">
+        <thead>
+            <tr>
+                <th>Conteúdo</th>
+                <th>Solicitante</th>
+                <th>Adquirido Em</th>
+                <th>Qtd. Licenças</th>
+                <th>Período de utilização</th>
+                <th>Custo</th>
+                <th>Renovação Automática</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(qntRegistros > 0) {
+                foreach(var licenca in @Model)
+                {
+                    <tr>
+                        <td>@licenca.DetalhesDoConteudo.Single(x => x.SiglaDoIdioma == "pt-BR").TituloDoConteudo</td>
+                        <td>@licenca.NomeDoUsuario</td>
+                        <td>@licenca.AdquiridaEmLabel</td>
+                        @if(licenca.QuantidadeDeUsuarios.HasValue) {
+                            <td>@licenca.QuantidadeDeUsuarios.Value.ToString()</td>
+                        }else {
+                            <td>Ilimitado</td>
+                        }
+                        <td>@licenca.PeriodoDaUtilizacaoLabel</td>
+                        <td>@licenca.CustoLabel</td>
+                        <td>@licenca.RenovacaoAutomaticaLabel</td>
+                    </tr>
+                }
+            } else {
+                <tr>
+                    <td colspan="7" class="text-center">Nenhuma licença encontrada</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

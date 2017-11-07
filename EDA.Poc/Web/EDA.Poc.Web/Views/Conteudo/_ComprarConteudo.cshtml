@@ -1,0 +1,84 @@
+﻿@model EDA.Poc.Web.ViewModels.DadosDeCompraViewModel
+@using EDA.Poc.Pagamentos.Domain.Enums;
+
+<section role="modal" class="with-action modal-compra">
+    <div role="modal-container">
+        @using(Html.BeginForm("Comprar", "Conteudo")) {
+            @Html.HiddenFor(x => x.IdDoConteudo)
+            <article class="header-action">
+                <h2>Escolha o tipo de Licença</h2>
+                <nav class="secondary-color">
+                    <button class="destaque-3 close-modal"><i class="fa fa-times"></i></button>
+                </nav>
+            </article>
+            <article class="with-toggle">
+                <p>
+                    @Html.RadioButtonFor(x => x.TipoDeLicenciamento, TipoDeLicenciamento.SemLimiteDeUsuarios, new { @id="qtd-ilimitada", @data_toggle="qtd-ilimitada"})
+                    <label for="qtd-ilimitada">Ilimitada @Model.PrecoIlimitadoLabel/mês</label>
+                </p>
+                <p>
+                    @Html.RadioButtonFor(x => x.TipoDeLicenciamento, TipoDeLicenciamento.QuantidadeLimitadaDeUsuarios, new { @id="qtd-limitada", @checked="checked", @data_toggle="qtd-limitada"})
+                    <label for="qtd-limitada">Limitada</label>
+                </p>
+                <div class="toggle-container active" data-toggle="qtd-limitada">
+                    <table class="table-compra">
+                        <tr>
+                            <th>Qtd. de Licenças</th>
+                            <th>Investimento por usuário</th>
+                        </tr>
+                        @foreach (var precoPorQuantidadeDeUsuarios in Model.PrecosPorQuantidadeDeUsuarios){
+                            <tr data-range="@precoPorQuantidadeDeUsuarios.LicencasDe|@precoPorQuantidadeDeUsuarios.LicencasAte">
+                                @if (precoPorQuantidadeDeUsuarios.LicencasDe == 0)
+                                {
+                                    <td>Até @precoPorQuantidadeDeUsuarios.LicencasAte</td>
+                                }
+                                else if (precoPorQuantidadeDeUsuarios.LicencasAte == null)
+                                {
+                                    <td>A partir de @precoPorQuantidadeDeUsuarios.LicencasDe</td>
+                                }
+                                else
+                                {
+                                    <td>De @precoPorQuantidadeDeUsuarios.LicencasDe até @precoPorQuantidadeDeUsuarios.LicencasAte</td>
+                                }
+                                <td data-preco="@precoPorQuantidadeDeUsuarios.Preco.ToString("0.00")">R$ @precoPorQuantidadeDeUsuarios.Preco</td>
+                            </tr>
+                        }
+                    </table>
+                    <div class="ov-auto">
+                        <div class="col-6">
+                            <h5>Qtd. de Licenças</h5>
+                            @Html.TextBoxFor(x => x.QuantidadeDeUsuarios, new { @class = "input-default s-10", @id="qtd-licencas"})
+                            @Html.ValidationMessageFor(x => x.QuantidadeDeUsuarios)
+                        </div>
+                        <div class="col-6">
+                            <h5>A partir de</h5>
+                            <span class="preco">X R$ @Model.PrecosPorQuantidadeDeUsuarios[0].Preco = 0,00/mês</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h5>Disponibilizar a partir de</h5>
+                @Html.TextBoxFor(x => x.DisponibilizarAPartirDe, new { @class = "input-default s-5", @id="data-inicial", @data_value=DateTime.Today})
+                @Html.ValidationMessageFor(x => x.DisponibilizarAPartirDe)
+            </article>
+            <article class="with-toggle">
+                <p>
+                    @Html.RadioButtonFor(x => x.TipoDeValidade, TipoDeValidade.QuantidadeLimitadaDeMeses, new { @id="prazo-limitado", @checked="checked", @data_toggle="prazo-limitado"})
+                    <label for="prazo-limitado">Prazo limitado - informe a quantidade de meses que deseja contratar</label>
+                    <div class="toggle-container active" data-toggle="prazo-limitado" >
+                        @Html.TextBoxFor(x => x.QuantidadeDeMesesDeValidade, new { @class = "input-default s-5",  @id="qtd-meses"})
+                        @Html.ValidationMessageFor(x => x.QuantidadeDeMesesDeValidade)
+                    </div>
+                </p>
+                <p>
+                    @Html.RadioButtonFor(x => x.TipoDeValidade, TipoDeValidade.SemLimiteDeMeses, new { @id="prazo-ilimitado", @data_toggle="prazo-ilimitado"})
+                    <label for="prazo-ilimitado">Prazo ilimitado - a cobrança será recorrente até o mês que cancelar a licença</label>
+                </p>
+            </article>
+            <p>
+                <button class="btn-default col-offset-3 col-6" type="submit"><i class="fa fa-check-circle"></i> comprar</button>
+            </p>
+        }
+    </div>
+</section>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC06389A-6BF7-4E91-A51E-692252670E79}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDA.Poc.Worker.ConsoleApplication</RootNamespace>
+    <AssemblyName>EDA.Poc.Worker.ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Windsor.4.1.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor.Lifestyles, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Windsor.Lifestyles.0.4.0\lib\net45\Castle.Windsor.Lifestyles.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GreenPipes, Version=1.2.0.96, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\GreenPipes.1.2.0\lib\net452\GreenPipes.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MassTransit, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MassTransit.3.5.7\lib\net452\MassTransit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MassTransit.Log4NetIntegration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MassTransit.Log4Net.3.5.7\lib\net452\MassTransit.Log4NetIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MassTransit.RabbitMqTransport, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MassTransit.RabbitMQ.3.5.7\lib\net452\MassTransit.RabbitMqTransport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MassTransit.WindsorIntegration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MassTransit.CastleWindsor.3.5.7\lib\net452\MassTransit.WindsorIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.1.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28\lib\net46\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Bson.2.4.4\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.2.4.4\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.Core.2.4.4\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy, Version=2.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\mongocsharpdriver.2.4.4\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NEventStore, Version=5.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NEventStore.5.2.0\lib\net40\NEventStore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NEventStore.Persistence.MongoDB, Version=5.3.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NEventStore.Persistence.MongoDB.5.3.7\lib\net40\NEventStore.Persistence.MongoDB.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NewId, Version=3.0.1.17, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NewId.3.0.1\lib\net452\NewId.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RabbitMQ.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\RabbitMQ.Client.5.0.1\lib\net451\RabbitMQ.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContainerBootstrapper.cs" />
+    <Compile Include="Installers\CommandBusInstaller.cs" />
+    <Compile Include="Installers\EventBusInstaller.cs" />
+    <Compile Include="Installers\EventStoreInstaller.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EDA.Poc.Infraestrutura.EventStore\EDA.Poc.Infraestrutura.EventStore.csproj">
+      <Project>{767223fc-d7ff-4348-8fa8-c66fb5c2e0a8}</Project>
+      <Name>EDA.Poc.Infraestrutura.EventStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infraestrutura\EDA.Poc.Infraestrutura.MongoDb\EDA.Poc.Infraestrutura.MongoDb.csproj">
+      <Project>{8558d4de-cbb3-4eae-876e-6035b3f32dc8}</Project>
+      <Name>EGuru.MarketPlace.Infraestrutura.MongoDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infraestrutura\EDA.Poc.Infraestrutura\EDA.Poc.Infraestrutura.csproj">
+      <Project>{f9948814-029f-48db-84f1-a86eddf9ca99}</Project>
+      <Name>EGuru.MarketPlace.Infraestrutura</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Integracoes\EDA.Poc.IntegracaoLMS\EDA.Poc.IntegracaoLMS.csproj">
+      <Project>{45e53d13-1fee-4f94-9fa3-ff3b6cc4ccd7}</Project>
+      <Name>EGuru.MarketPlace.IntegracaoLMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Integracoes\EDA.Poc.IntegracaoTemporaria.Events\EDA.Poc.IntegracaoTemporaria.Events.csproj">
+      <Project>{805e3cee-2ad8-4969-b4cc-84fe6728906e}</Project>
+      <Name>EGuru.MarketPlace.IntegracaoTemporaria.Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.CommandHandlers\EDA.Poc.Pagamentos.CommandHandlers.csproj">
+      <Project>{26519a89-c791-422e-8c21-1d8d1f70ea77}</Project>
+      <Name>EGuru.MarketPlace.Loja.CommandHandlers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Commands\EDA.Poc.Pagamentos.Commands.csproj">
+      <Project>{cc78a7d0-0069-40e3-b55e-1692edf5528d}</Project>
+      <Name>EGuru.MarketPlace.Loja.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Consultas.MongoDb\EDA.Poc.Pagamentos.Consultas.MongoDb.csproj">
+      <Project>{08881ee8-bc28-4757-a591-d387d4669020}</Project>
+      <Name>EGuru.MarketPlace.Loja.Consultas.MongoDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Consultas\EDA.Poc.Pagamentos.Consultas.csproj">
+      <Project>{ab5a9cd4-4148-4e4a-82cc-615871fc7dbf}</Project>
+      <Name>EGuru.MarketPlace.Loja.Consultas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Denormalizers\EDA.Poc.Pagamentos.Denormalizers.csproj">
+      <Project>{0b4ff2b0-631e-4126-beb1-320d7d8f810a}</Project>
+      <Name>EGuru.MarketPlace.Loja.Denormalizers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Domain.Enums\EDA.Poc.Pagamentos.Domain.Enums.csproj">
+      <Project>{e812fbad-1ace-43f5-85fc-3f95848c855a}</Project>
+      <Name>EGuru.MarketPlace.Loja.Domain.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Domain\EDA.Poc.Pagamentos.Domain.csproj">
+      <Project>{4fd0e1d6-a2ac-498f-8f37-11157c32efb4}</Project>
+      <Name>EGuru.MarketPlace.Loja.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.EventHandlers\EDA.Poc.Pagamentos.EventHandlers.csproj">
+      <Project>{e21caba6-e028-47a2-b039-7a8cb70e7ec7}</Project>
+      <Name>EGuru.MarketPlace.Loja.EventHandlers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Events\EDA.Poc.Pagamentos.Events.csproj">
+      <Project>{20134c91-b040-4a9f-ba3e-3cddb237f50e}</Project>
+      <Name>EGuru.MarketPlace.Loja.Events</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+﻿@using System.Linq
+<aside class="col-tablet-12">
+    <div class="badge">
+        <div class="badge-container">
+            <h1>@Model.MediaDasAvaliacoesDoConteudo.ToString("0.0")</h1>
+            <span data-avaliacao="@Model.MediaDasAvaliacoesDoConteudo" class="fa primary-color estrelas"></span>
+            <p><i class="fa fa-users"></i> @Model.QuantidadeAvaliacoes</p>
+            <p>Usuários</p>
+        </div>
+    </div>
+</aside>
+<article class="col-tablet-12">
+    <ul>
+        @foreach (var avaliacao in @Model.QuantidadeDeAvaliacoesPorValorDeAvaliacao) {
+            <li class="v-align-center"><span>@avaliacao.Key <i class="fa fa-star star-color"></i></span><div data-graph-bar="@avaliacao.Value"></div></li>
+        }
+    </ul>
+</article>

@@ -1,0 +1,23 @@
+﻿@mixin component($name: 'anonymous', $dependencies: ()) {
+    @if (global-variable-exists('-COMPONENTS') == false) {
+        $-COMPONENTS: () !global;
+    }
+
+    @if ($name != 'anonymous' AND component-exists($name)) {
+        @error 'Component "#{$name}" has already been imported.';
+    } @else {
+        @each $dependency in $dependencies {
+            @if (component-exists($dependency) == false) {
+                @error 'Component "#{$dependency}" should be include before "#{$name}"';
+            }
+        }
+
+        $-COMPONENTS: append($-COMPONENTS, $name) !global;
+    }
+}
+
+@function component-exists($component) {
+    @return map-has-key($-COMPONENTS, $component);
+}
+
+@include component('component');

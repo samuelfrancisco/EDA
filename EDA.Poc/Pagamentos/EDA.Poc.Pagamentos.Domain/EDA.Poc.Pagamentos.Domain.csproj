@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FD0E1D6-A2AC-498F-8F37-11157C32EFB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDA.Poc.Pagamentos.Domain</RootNamespace>
+    <AssemblyName>EDA.Poc.Pagamentos.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteMemento.cs" />
+    <Compile Include="CobrancaDeCompra.cs" />
+    <Compile Include="CobrancaRecorrente.cs" />
+    <Compile Include="Conteudo.cs" />
+    <Compile Include="ConteudoFaixaDePreco.cs" />
+    <Compile Include="ConteudoMemento.cs" />
+    <Compile Include="ConteudoPromocao.cs" />
+    <Compile Include="ConteudoAvaliacao.cs" />
+    <Compile Include="FaturaMensal.cs" />
+    <Compile Include="FaturaMensalDebito.cs" />
+    <Compile Include="LicencaDeConteudo.cs" />
+    <Compile Include="OrdemDeCompra.cs" />
+    <Compile Include="OrdemDeCompraMemento.cs" />
+    <Compile Include="OrdemDeCompraPromocao.cs" />
+    <Compile Include="ProcessoDeCobrancaRecorrente.cs" />
+    <Compile Include="ProcessoDeCobrancaRecorrenteDebito.cs" />
+    <Compile Include="ProcessoDeCobrancaRecorrenteMemento.cs" />
+    <Compile Include="ProcessoDeCompra.cs" />
+    <Compile Include="ProcessoDeCompraMemento.cs" />
+    <Compile Include="ProcessoDeCompraPromocao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infraestrutura\EDA.Poc.Infraestrutura\EDA.Poc.Infraestrutura.csproj">
+      <Project>{f9948814-029f-48db-84f1-a86eddf9ca99}</Project>
+      <Name>EGuru.MarketPlace.Infraestrutura</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDA.Poc.Pagamentos.Commands\EDA.Poc.Pagamentos.Commands.csproj">
+      <Project>{cc78a7d0-0069-40e3-b55e-1692edf5528d}</Project>
+      <Name>EGuru.MarketPlace.Loja.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDA.Poc.Pagamentos.Domain.Enums\EDA.Poc.Pagamentos.Domain.Enums.csproj">
+      <Project>{e812fbad-1ace-43f5-85fc-3f95848c855a}</Project>
+      <Name>EGuru.MarketPlace.Loja.Domain.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDA.Poc.Pagamentos.Events\EDA.Poc.Pagamentos.Events.csproj">
+      <Project>{20134c91-b040-4a9f-ba3e-3cddb237f50e}</Project>
+      <Name>EGuru.MarketPlace.Loja.Events</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

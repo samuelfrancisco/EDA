@@ -1,0 +1,3804 @@
+@charset "UTF-8";
+/* line 35, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/base/_settings.scss */
+.star-color {
+  color: #F9D00D;
+}
+
+/* line 39, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/base/_settings.scss */
+.primary-color {
+  color: #002664;
+}
+
+/* line 43, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/base/_settings.scss */
+.secondary-color {
+  color: #0082C8;
+}
+
+/* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/base/_settings.scss */
+.tertiary-color {
+  color: #EC6C1F;
+}
+
+/* line 51, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/base/_settings.scss */
+.default-color {
+  color: #7F7F7F;
+}
+
+/* line 1, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.ov-auto {
+  overflow: auto;
+}
+
+/* line 5, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+section.ov-auto {
+  padding-bottom: 5px;
+}
+
+/* line 9, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.ov-initial {
+  overflow: initial;
+}
+
+/* line 13, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+main.ov-initial,
+section.ov-initial {
+  overflow: initial;
+}
+
+/* line 18, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-1 {
+  width: 7.41667%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-1:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-1.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-1.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-2 {
+  width: 15.83333%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-2:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-2.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-2.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-3 {
+  width: 24.25%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-3:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-3.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-3.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-4 {
+  width: 32.66667%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-4:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-4.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-4.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-5 {
+  width: 41.08333%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-5:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-5.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-5.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-6 {
+  width: 49.5%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-6:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-6.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-6.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-7 {
+  width: 57.91667%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-7:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-7.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-7.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-8 {
+  width: 66.33333%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-8:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-8.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-8.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-9 {
+  width: 74.75%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-9:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-9.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-9.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-10 {
+  width: 83.16667%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-10:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-10.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-10.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-11 {
+  width: 91.58333%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-11:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-11.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-11.no-float {
+  float: none;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-12 {
+  width: 100%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+.col-12:last-child {
+  margin-right: 0;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-12.no-right {
+  margin-right: 0;
+}
+
+/* line 30, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-12.no-float {
+  float: none;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-11 {
+  margin-left: 91.66667%;
+}
+
+/* line 37, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.col-offset-12 {
+  margin-left: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-1 {
+    width: 7.41667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-1:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-1.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-2 {
+    width: 15.83333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-2:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-2.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-3 {
+    width: 24.25%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-3:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-3.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-4 {
+    width: 32.66667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-4:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-4.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-5 {
+    width: 41.08333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-5:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-5.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-6 {
+    width: 49.5%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-6:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-6.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-7 {
+    width: 57.91667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-7:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-7.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-8 {
+    width: 66.33333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-8:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-8.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-9 {
+    width: 74.75%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-9:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-9.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-10 {
+    width: 83.16667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-10:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-10.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-11 {
+    width: 91.58333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-11:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-11.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-sm-12:last-child {
+    margin-right: 0;
+  }
+  /* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-12.no-right-sm {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-1 {
+    margin-left: 8.33333%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-2 {
+    margin-left: 16.66667%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-3 {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-4 {
+    margin-left: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-5 {
+    margin-left: 41.66667%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-6 {
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-7 {
+    margin-left: 58.33333%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-8 {
+    margin-left: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-9 {
+    margin-left: 75%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-10 {
+    margin-left: 83.33333%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-sm-tablet-12 {
+    margin-left: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-1 {
+    width: 7.41667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-1:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-1.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-2 {
+    width: 15.83333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-2:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-2.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-3 {
+    width: 24.25%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-3:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-3.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-4 {
+    width: 32.66667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-4:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-4.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-5 {
+    width: 41.08333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-5:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-5.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-6 {
+    width: 49.5%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-6:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-6.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-7 {
+    width: 57.91667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-7:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-7.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-8 {
+    width: 66.33333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-8:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-8.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-9 {
+    width: 74.75%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-9:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-9.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-10 {
+    width: 83.16667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-10:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-10.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-11 {
+    width: 91.58333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-11:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-11.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-12 {
+    width: 100%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-tablet-12:last-child {
+    margin-right: 0;
+  }
+  /* line 67, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-tablet-12.no-right-tablet {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-1 {
+    margin-left: 8.33333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-2 {
+    margin-left: 16.66667%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-3 {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-4 {
+    margin-left: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-5 {
+    margin-left: 41.66667%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-6 {
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-7 {
+    margin-left: 58.33333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-8 {
+    margin-left: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-9 {
+    margin-left: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-10 {
+    margin-left: 83.33333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-tablet-12 {
+    margin-left: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-1 {
+    width: 7.41667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-1:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-1.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-2 {
+    width: 15.83333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-2:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-2.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-3 {
+    width: 24.25%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-3:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-3.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-4 {
+    width: 32.66667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-4:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-4.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-5 {
+    width: 41.08333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-5:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-5.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-6 {
+    width: 49.5%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-6:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-6.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-7 {
+    width: 57.91667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-7:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-7.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-8 {
+    width: 66.33333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-8:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-8.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-9 {
+    width: 74.75%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-9:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-9.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-10 {
+    width: 83.16667%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-10:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-10.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-11 {
+    width: 91.58333%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-11:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-11.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-12 {
+    width: 100%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 1%;
+  }
+  /* line 376, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  .col-mobile-12:last-child {
+    margin-right: 0;
+  }
+  /* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-mobile-12.no-right-phone {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-1 {
+    margin-left: 8.33333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-2 {
+    margin-left: 16.66667%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-3 {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-4 {
+    margin-left: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-5 {
+    margin-left: 41.66667%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-6 {
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-7 {
+    margin-left: 58.33333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-8 {
+    margin-left: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-9 {
+    margin-left: 75%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-10 {
+    margin-left: 83.33333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 96, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+  .col-offset-mobile-12 {
+    margin-left: 100%;
+  }
+}
+
+/* line 102, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.relative {
+  position: relative;
+}
+
+/* line 106, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 110, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 114, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 121, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-bottom {
+  display: block;
+  font-size: 0%;
+}
+
+/* line 125, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-bottom:before {
+  content: '';
+  height: 100%;
+  width: 0;
+}
+
+/* line 131, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-bottom:before,
+.v-align-bottom > * {
+  display: inline-block;
+  vertical-align: bottom;
+  float: none;
+  font-size: initial;
+}
+
+/* line 140, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-bottom-absolute {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 121, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-top {
+  display: block;
+  font-size: 0%;
+}
+
+/* line 125, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-top:before {
+  content: '';
+  height: 100%;
+  width: 0;
+}
+
+/* line 131, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-top:before,
+.v-align-top > * {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  font-size: initial;
+}
+
+/* line 140, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-top-absolute {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 121, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-center {
+  display: block;
+  font-size: 0%;
+}
+
+/* line 125, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-center:before {
+  content: '';
+  height: 100%;
+  width: 0;
+}
+
+/* line 131, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-center:before,
+.v-align-center > * {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  font-size: initial;
+}
+
+/* line 140, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.v-align-center-absolute {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 149, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.field-validation-error {
+  color: red;
+  font-size: 1rem;
+  display: block;
+}
+
+/* line 154, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.field-validation-error.inline {
+  display: inline-block;
+}
+
+/* line 159, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_helpers.scss */
+.input-validation-error {
+  border: solid 2px red;
+}
+
+/* line 23, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+*,
+*:after,
+*:before {
+  tap-highlight-color: #99cc33;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+/* line 31, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+html {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "ITC Officina Serif", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 38, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+body {
+  margin: 0;
+  background-color: #F7F7F7;
+  position: relative;
+  font-size: 16px;
+}
+
+/* line 45, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 48, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 53, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 69, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 77, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 82, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+a {
+  -webkit-transition: 300ms color cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 300ms color cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: transparent;
+}
+
+/* line 92, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 97, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 101, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 106, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 110, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 120, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 124, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 132, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 136, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 140, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 148, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 152, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 156, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 161, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 165, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 173, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 183, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 187, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 192, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 200, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 205, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 211, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 215, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 221, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 226, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 231, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 236, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 242, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 247, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 251, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 255, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 260, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 4, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default.vertical li {
+  width: 100%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 1%;
+}
+
+/* line 363, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+section ul.default.vertical li:nth-of-type(n) {
+  margin-right: 1%;
+  float: left;
+  clear: none;
+}
+
+/* line 368, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+section ul.default.vertical li:nth-of-type(1n) {
+  margin-right: 0;
+  float: right;
+}
+
+/* line 372, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+section ul.default.vertical li:nth-of-type(1n + 1) {
+  clear: both;
+}
+
+/* line 9, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default.horizontal li {
+  width: 21.25%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+  margin-right: 5%;
+}
+
+/* line 363, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+section ul.default.horizontal li:nth-of-type(n) {
+  margin-right: 5%;
+  float: left;
+  clear: none;
+}
+
+/* line 368, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+section ul.default.horizontal li:nth-of-type(4n) {
+  margin-right: 0;
+  float: right;
+}
+
+/* line 372, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+section ul.default.horizontal li:nth-of-type(4n + 1) {
+  clear: both;
+}
+
+@media only screen and (min-width: 48.00625em) and (max-width: 64em) {
+  /* line 9, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+  section ul.default.horizontal li {
+    width: 47.5%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 5%;
+  }
+  /* line 363, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(n) {
+    margin-right: 5%;
+    float: left;
+    clear: none;
+  }
+  /* line 368, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(2n) {
+    margin-right: 0;
+    float: right;
+  }
+  /* line 372, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(2n + 1) {
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 35.50625em) and (max-width: 48em) {
+  /* line 9, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+  section ul.default.horizontal li {
+    width: 47.5%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 5%;
+  }
+  /* line 363, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(n) {
+    margin-right: 5%;
+    float: left;
+    clear: none;
+  }
+  /* line 368, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(2n) {
+    margin-right: 0;
+    float: right;
+  }
+  /* line 372, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(2n + 1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 35.5em) {
+  /* line 9, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+  section ul.default.horizontal li {
+    width: 100%;
+    float: left;
+    clear: none;
+    margin-left: 0;
+    margin-right: 5%;
+  }
+  /* line 363, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(n) {
+    margin-right: 5%;
+    float: left;
+    clear: none;
+  }
+  /* line 368, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(1n) {
+    margin-right: 0;
+    float: right;
+  }
+  /* line 372, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/core/_mixins.scss */
+  section ul.default.horizontal li:nth-of-type(1n + 1) {
+    clear: both;
+  }
+}
+
+/* line 22, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default li {
+  margin-bottom: 30px;
+}
+
+/* line 25, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 29, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default figure {
+  box-shadow: 0 0 8px rgba(150, 150, 150, 0.7);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* line 34, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default figure figcaption {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 15px 0;
+  background-color: white;
+}
+
+/* line 41, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default figure figcaption h3 {
+  margin: 5px;
+}
+
+/* line 45, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default figure figcaption a {
+  text-decoration: none;
+  color: #0082C8;
+}
+
+/* line 52, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.default .loading figure {
+  box-shadow: none;
+}
+
+/* line 57, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.flex {
+  overflow: auto;
+}
+
+/* line 59, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.flex li {
+  overflow: auto;
+  padding: 20px 3px;
+  border-top: solid 1px #D3D3D3;
+}
+
+/* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_lists.scss */
+section ul.flex li figure {
+  box-shadow: 0 0 8px rgba(150, 150, 150, 0.7);
+}
+
+/* line 1, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel, .carousel ul {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 7, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.round-border.carousel, .carousel ul.round-border {
+  border-radius: 15px;
+}
+
+/* line 15, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel.shadow {
+  box-shadow: 0 0 8px rgba(150, 150, 150, 0.7);
+}
+
+/* line 22, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel ul.shadow {
+  box-shadow: 0 0 8px rgba(150, 150, 150, 0.7);
+}
+
+/* line 27, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel .items-wrapper {
+  white-space: nowrap;
+  -webkit-transition: .5s all linear;
+  transition: .5s all linear;
+  font-size: 0%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 34, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel .items-wrapper .item-carousel {
+  display: inline-block;
+}
+
+/* line 41, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 30px;
+  height: 60px;
+  line-height: 60px;
+  z-index: 10;
+}
+
+/* line 53, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel .next:hover,
+.carousel .prev:hover {
+  cursor: pointer;
+}
+
+/* line 58, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel .next {
+  right: 0;
+  border-radius: 30px 0 0 30px;
+  text-align: right;
+}
+
+/* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel .prev {
+  left: 0;
+  border-radius: 0 30px 30px 0;
+  text-align: left;
+}
+
+/* line 70, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel figure {
+  position: relative;
+  height: auto;
+}
+
+/* line 75, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-width: 40%;
+  max-width: 60%;
+  min-height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* line 88, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel figcaption h3 {
+  margin: 5px;
+}
+
+/* line 92, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_carousel.scss */
+.carousel figcaption a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 8, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.avalie {
+  font-size: 0;
+}
+
+/* line 11, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.avalie .estrela {
+  font-family: fontAwesome;
+  font-size: 1.25rem;
+  padding: 3px;
+}
+
+/* line 16, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.avalie .estrela:before {
+  content: '\f006';
+  color: #7F7F7F;
+}
+
+/* line 22, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.avalie .estrela.active:before {
+  color: #F9D00D;
+  content: '\f005';
+}
+
+/* line 29, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.avalie .estrela.hovered:before {
+  color: #0082C8;
+  content: '\f005';
+}
+
+/* line 35, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.avalie .estrela:hover {
+  cursor: pointer;
+}
+
+/* line 40, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.avalie [data-toggle-avaliacao] {
+  visibility: hidden;
+  color: #0082C8;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+/* line 45, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.avalie [data-toggle-avaliacao].active {
+  font-size: 1.25rem;
+  visibility: visible;
+}
+
+/* line 53, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa,
+.estrelas {
+  margin: 5px 0;
+  display: block;
+  white-space: nowrap;
+}
+
+/* line 59, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.inline,
+.estrelas.inline {
+  display: inline;
+}
+
+/* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa[class*=av]:before,
+.estrelas[class*=av]:before {
+  color: #F9D00D;
+}
+
+/* line 69, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa[class*=av]:after,
+.estrelas[class*=av]:after {
+  color: #F9D00D;
+}
+
+/* line 78, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.no-color[class*=av]:before,
+.estrelas.no-color[class*=av]:before {
+  color: inherit;
+}
+
+/* line 83, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.no-color[class*=av]:after,
+.estrelas.no-color[class*=av]:after {
+  color: inherit;
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-0:before,
+.estrelas.av-0:before {
+  content: "";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-0:after,
+.estrelas.av-0:after {
+  content: "     ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-0-5:before,
+.estrelas.av-0-5:before {
+  content: " ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-0-5:after,
+.estrelas.av-0-5:after {
+  content: "    ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-1:before,
+.estrelas.av-1:before {
+  content: " ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-1:after,
+.estrelas.av-1:after {
+  content: "    ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-1-5:before,
+.estrelas.av-1-5:before {
+  content: "  ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-1-5:after,
+.estrelas.av-1-5:after {
+  content: "   ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-2:before,
+.estrelas.av-2:before {
+  content: "  ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-2:after,
+.estrelas.av-2:after {
+  content: "   ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-2-5:before,
+.estrelas.av-2-5:before {
+  content: "   ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-2-5:after,
+.estrelas.av-2-5:after {
+  content: "  ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-3:before,
+.estrelas.av-3:before {
+  content: "   ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-3:after,
+.estrelas.av-3:after {
+  content: "  ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-3-5:before,
+.estrelas.av-3-5:before {
+  content: "    ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-3-5:after,
+.estrelas.av-3-5:after {
+  content: " ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-4:before,
+.estrelas.av-4:before {
+  content: "    ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-4:after,
+.estrelas.av-4:after {
+  content: " ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-4-5:before,
+.estrelas.av-4-5:before {
+  content: "     ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-4-5:after,
+.estrelas.av-4-5:after {
+  content: "";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-5:before,
+.estrelas.av-5:before {
+  content: "     ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-5:after,
+.estrelas.av-5:after {
+  content: "";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-5-5:before,
+.estrelas.av-5-5:before {
+  content: "      ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.estrelas.fa.av-5-5:after,
+.estrelas.av-5-5:after {
+  content: "";
+}
+
+/* line 53, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa,
+.down {
+  margin: 5px 0;
+  display: block;
+  white-space: nowrap;
+}
+
+/* line 59, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.inline,
+.down.inline {
+  display: inline;
+}
+
+/* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa[class*=av]:before,
+.down[class*=av]:before {
+  color: #E32523;
+}
+
+/* line 69, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa[class*=av]:after,
+.down[class*=av]:after {
+  color: #CACACA;
+}
+
+/* line 78, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.no-color[class*=av]:before,
+.down.no-color[class*=av]:before {
+  color: inherit;
+}
+
+/* line 83, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.no-color[class*=av]:after,
+.down.no-color[class*=av]:after {
+  color: inherit;
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-0:before,
+.down.av-0:before {
+  content: "";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-0:after,
+.down.av-0:after {
+  content: "     ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-0-5:before,
+.down.av-0-5:before {
+  content: " ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-0-5:after,
+.down.av-0-5:after {
+  content: "    ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-1:before,
+.down.av-1:before {
+  content: " ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-1:after,
+.down.av-1:after {
+  content: "    ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-1-5:before,
+.down.av-1-5:before {
+  content: "  ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-1-5:after,
+.down.av-1-5:after {
+  content: "   ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-2:before,
+.down.av-2:before {
+  content: "  ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-2:after,
+.down.av-2:after {
+  content: "   ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-2-5:before,
+.down.av-2-5:before {
+  content: "   ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-2-5:after,
+.down.av-2-5:after {
+  content: "  ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-3:before,
+.down.av-3:before {
+  content: "   ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-3:after,
+.down.av-3:after {
+  content: "  ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-3-5:before,
+.down.av-3-5:before {
+  content: "    ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-3-5:after,
+.down.av-3-5:after {
+  content: " ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-4:before,
+.down.av-4:before {
+  content: "    ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-4:after,
+.down.av-4:after {
+  content: " ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-4-5:before,
+.down.av-4-5:before {
+  content: "     ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-4-5:after,
+.down.av-4-5:after {
+  content: "";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-5:before,
+.down.av-5:before {
+  content: "     ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-5:after,
+.down.av-5:after {
+  content: "";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-5-5:before,
+.down.av-5-5:before {
+  content: "      ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.down.fa.av-5-5:after,
+.down.av-5-5:after {
+  content: "";
+}
+
+/* line 53, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa,
+.check {
+  margin: 5px 0;
+  display: block;
+  white-space: nowrap;
+}
+
+/* line 59, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.inline,
+.check.inline {
+  display: inline;
+}
+
+/* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa[class*=av]:before,
+.check[class*=av]:before {
+  color: #F7CE09;
+}
+
+/* line 69, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa[class*=av]:after,
+.check[class*=av]:after {
+  color: #CACACA;
+}
+
+/* line 78, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.no-color[class*=av]:before,
+.check.no-color[class*=av]:before {
+  color: inherit;
+}
+
+/* line 83, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.no-color[class*=av]:after,
+.check.no-color[class*=av]:after {
+  color: inherit;
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-0:before,
+.check.av-0:before {
+  content: "";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-0:after,
+.check.av-0:after {
+  content: "     ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-0-5:before,
+.check.av-0-5:before {
+  content: " ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-0-5:after,
+.check.av-0-5:after {
+  content: "    ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-1:before,
+.check.av-1:before {
+  content: " ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-1:after,
+.check.av-1:after {
+  content: "    ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-1-5:before,
+.check.av-1-5:before {
+  content: "  ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-1-5:after,
+.check.av-1-5:after {
+  content: "   ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-2:before,
+.check.av-2:before {
+  content: "  ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-2:after,
+.check.av-2:after {
+  content: "   ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-2-5:before,
+.check.av-2-5:before {
+  content: "   ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-2-5:after,
+.check.av-2-5:after {
+  content: "  ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-3:before,
+.check.av-3:before {
+  content: "   ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-3:after,
+.check.av-3:after {
+  content: "  ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-3-5:before,
+.check.av-3-5:before {
+  content: "    ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-3-5:after,
+.check.av-3-5:after {
+  content: " ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-4:before,
+.check.av-4:before {
+  content: "    ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-4:after,
+.check.av-4:after {
+  content: " ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-4-5:before,
+.check.av-4-5:before {
+  content: "     ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-4-5:after,
+.check.av-4-5:after {
+  content: "";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-5:before,
+.check.av-5:before {
+  content: "     ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-5:after,
+.check.av-5:after {
+  content: "";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-5-5:before,
+.check.av-5-5:before {
+  content: "      ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.check.fa.av-5-5:after,
+.check.av-5-5:after {
+  content: "";
+}
+
+/* line 53, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa,
+.up {
+  margin: 5px 0;
+  display: block;
+  white-space: nowrap;
+}
+
+/* line 59, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.inline,
+.up.inline {
+  display: inline;
+}
+
+/* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa[class*=av]:before,
+.up[class*=av]:before {
+  color: #68D500;
+}
+
+/* line 69, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa[class*=av]:after,
+.up[class*=av]:after {
+  color: #CACACA;
+}
+
+/* line 78, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.no-color[class*=av]:before,
+.up.no-color[class*=av]:before {
+  color: inherit;
+}
+
+/* line 83, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.no-color[class*=av]:after,
+.up.no-color[class*=av]:after {
+  color: inherit;
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-0:before,
+.up.av-0:before {
+  content: "";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-0:after,
+.up.av-0:after {
+  content: "     ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-0-5:before,
+.up.av-0-5:before {
+  content: " ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-0-5:after,
+.up.av-0-5:after {
+  content: "    ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-1:before,
+.up.av-1:before {
+  content: " ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-1:after,
+.up.av-1:after {
+  content: "    ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-1-5:before,
+.up.av-1-5:before {
+  content: "  ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-1-5:after,
+.up.av-1-5:after {
+  content: "   ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-2:before,
+.up.av-2:before {
+  content: "  ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-2:after,
+.up.av-2:after {
+  content: "   ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-2-5:before,
+.up.av-2-5:before {
+  content: "   ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-2-5:after,
+.up.av-2-5:after {
+  content: "  ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-3:before,
+.up.av-3:before {
+  content: "   ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-3:after,
+.up.av-3:after {
+  content: "  ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-3-5:before,
+.up.av-3-5:before {
+  content: "    ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-3-5:after,
+.up.av-3-5:after {
+  content: " ";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-4:before,
+.up.av-4:before {
+  content: "    ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-4:after,
+.up.av-4:after {
+  content: " ";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-4-5:before,
+.up.av-4-5:before {
+  content: "     ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-4-5:after,
+.up.av-4-5:after {
+  content: "";
+}
+
+/* line 115, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-5:before,
+.up.av-5:before {
+  content: "     ";
+}
+
+/* line 118, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-5:after,
+.up.av-5:after {
+  content: "";
+}
+
+/* line 123, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-5-5:before,
+.up.av-5-5:before {
+  content: "      ";
+}
+
+/* line 126, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_avaliacao.scss */
+.up.fa.av-5-5:after,
+.up.av-5-5:after {
+  content: "";
+}
+
+/* line 4, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header.no-top,
+section.no-top {
+  margin-top: 0;
+}
+
+/* line 8, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > section,
+section > section {
+  padding: 0;
+}
+
+/* line 11, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > section:first-child,
+section > section:first-child {
+  margin-top: 0;
+}
+
+/* line 17, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header .loading img,
+section .loading img {
+  width: initial;
+}
+
+/* line 22, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header article,
+section article {
+  color: #7F7F7F;
+}
+
+/* line 25, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header article a,
+section article a {
+  color: inherit;
+}
+
+/* line 29, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header article p,
+section article p {
+  margin: 10px 0;
+}
+
+/* line 32, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header article p:first-child,
+section article p:first-child {
+  margin-top: 0;
+}
+
+/* line 38, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header h2,
+section h2 {
+  border-bottom: 2px solid #D3D3D3;
+  color: #0082C8;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+/* line 44, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header h3,
+section h3 {
+  font-weight: 100;
+}
+
+/* line 48, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header.well-destaque,
+section.well-destaque {
+  background-color: #0082C8;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 20px;
+}
+
+/* line 55, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header.well,
+section.well {
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  padding: 20px 20px;
+  color: #7F7F7F;
+}
+
+/* line 64, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+nav[role=filter] {
+  background-color: #F0F0F0;
+  padding: 5px 20px;
+}
+
+/* line 68, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+nav[role=filter] p {
+  margin: 20px 0;
+}
+
+/* line 74, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+[role="action-group"] {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+/* line 79, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+[role="input-group"] {
+  margin-bottom: 15px;
+}
+
+/* line 82, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+[role="input-group"] > * {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 88, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+[role="input-group"] label {
+  display: block;
+  font-weight: bold;
+}
+
+/* line 92, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+[role="input-group"] label.inline {
+  display: inline-block;
+}
+
+/* line 102, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+article.with-action .header-action, article.with-toggle .header-action,
+section.with-action .header-action,
+section.with-toggle .header-action {
+  border-bottom: 2px solid #CACACA;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+/* line 107, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+article.with-action .header-action > h1, article.with-toggle .header-action > h1,
+section.with-action .header-action > h1,
+section.with-toggle .header-action > h1 {
+  border-bottom: none;
+  color: #002664;
+  float: left;
+  margin: 0;
+}
+
+/* line 113, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+article.with-action .header-action > h2, article.with-toggle .header-action > h2,
+section.with-action .header-action > h2,
+section.with-toggle .header-action > h2 {
+  border-bottom: none;
+  color: #0082C8;
+  float: left;
+  margin: 0;
+}
+
+/* line 120, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+article.with-action .header-action nav, article.with-toggle .header-action nav,
+section.with-action .header-action nav,
+section.with-toggle .header-action nav {
+  float: right;
+}
+
+/* line 127, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+article.with-toggle .toggle-container,
+section.with-toggle .toggle-container {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  width: 90%;
+}
+
+/* line 134, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+article.with-toggle .toggle-container.active,
+section.with-toggle .toggle-container.active {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  width: initial;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  overflow: normal;
+}
+
+/* line 148, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header {
+  padding-top: 20px;
+}
+
+/* line 150, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > h1 {
+  max-width: nill;
+  width: auto;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 0;
+}
+
+/* line 154, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > h1 > div {
+  margin-bottom: 15px;
+  padding: 3px;
+}
+
+/* line 159, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > h1 div {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 163, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > h1 div span {
+  font-size: 1.125rem;
+  display: block;
+  color: #002664;
+}
+
+/* line 169, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > h1 div a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0082C8;
+}
+
+/* line 176, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > h1 img {
+  max-height: 60px;
+  display: inline-block;
+}
+
+/* line 180, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+header > h1 img.image-usuario {
+  box-shadow: 0 0 8px rgba(150, 150, 150, 0.7);
+}
+
+/* line 187, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+div[role=wrapper] {
+  max-width: nill;
+  width: auto;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: auto;
+  position: relative;
+}
+
+/* line 197, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: nill;
+  width: auto;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* line 202, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+section > section {
+  max-width: nill;
+  width: auto;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
+/* line 207, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+section img {
+  width: 100%;
+}
+
+/* line 212, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+aside {
+  margin-bottom: 30px;
+}
+
+/* line 216, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+main {
+  overflow: auto;
+}
+
+/* line 219, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+main[role=details] {
+  background-color: white;
+  box-shadow: 0 0 8px rgba(150, 150, 150, 0.7);
+}
+
+/* line 223, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+main[role=details] section {
+  max-width: nill;
+  width: auto;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/* line 225, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+main[role=details] section > section {
+  max-width: nill;
+  width: auto;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 232, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_sections.scss */
+main > section.last-child {
+  padding-bottom: 20px;
+}
+
+/* line 1, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.destaque-1, .destaque-2, .destaque-3, .input-default, .select-default, .btn-default {
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+
+/* line 7, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.inline.destaque-1, .inline.destaque-2, .inline.destaque-3, .inline.input-default, .inline.select-default, .inline.btn-default {
+  display: inline-block;
+}
+
+/* line 10, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.full.destaque-1, .full.destaque-2, .full.destaque-3, .full.input-default, .full.select-default, .full.btn-default {
+  width: 100%;
+}
+
+/* line 15, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.container-tooltip {
+  position: relative;
+  min-width: 60px;
+}
+
+/* line 19, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.container-tooltip .tooltip {
+  position: absolute;
+  top: 100%;
+  margin-left: -200%;
+  width: 400%;
+  background-color: rgba(0, 38, 100, 0.85);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  z-index: 10000;
+  opacity: 0;
+  -webkit-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+}
+
+/* line 32, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.container-tooltip .tooltip.active {
+  opacity: 1;
+}
+
+/* line 36, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.container-tooltip .tooltip:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom: 15px solid rgba(0, 38, 100, 0.85);
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
+/* line 48, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.container-tooltip .tooltip span {
+  font-size: 16px;
+  color: white;
+  font-weight: 100;
+}
+
+/* line 56, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.container-tooltip:hover .tooltip {
+  opacity: 1;
+}
+
+/* line 62, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.destaque-1 {
+  border: solid 1px #CACACA;
+  padding: 10px 0;
+  color: #7F7F7F;
+}
+
+/* line 70, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.destaque-2 {
+  background-color: #0082C8;
+}
+
+/* line 76, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.destaque-3 {
+  background-color: #0082C8;
+  padding: 5px 8px;
+  box-shadow: none;
+  border: none;
+}
+
+/* line 85, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.input-default, .select-default, .nav-pills-default .pill-default {
+  color: #7F7F7F;
+  text-align: left;
+  padding: 5px;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-1.input-default, .s-1.select-default, .nav-pills-default .s-1.pill-default {
+  width: 10% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-2.input-default, .s-2.select-default, .nav-pills-default .s-2.pill-default {
+  width: 20% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-3.input-default, .s-3.select-default, .nav-pills-default .s-3.pill-default {
+  width: 30% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-4.input-default, .s-4.select-default, .nav-pills-default .s-4.pill-default {
+  width: 40% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-5.input-default, .s-5.select-default, .nav-pills-default .s-5.pill-default {
+  width: 50% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-6.input-default, .s-6.select-default, .nav-pills-default .s-6.pill-default {
+  width: 60% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-7.input-default, .s-7.select-default, .nav-pills-default .s-7.pill-default {
+  width: 70% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-8.input-default, .s-8.select-default, .nav-pills-default .s-8.pill-default {
+  width: 80% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-9.input-default, .s-9.select-default, .nav-pills-default .s-9.pill-default {
+  width: 90% !important;
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.s-10.input-default, .s-10.select-default, .nav-pills-default .s-10.pill-default {
+  width: 100% !important;
+}
+
+/* line 97, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.input-default {
+  border: solid 2px #CACACA;
+}
+
+/* line 103, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.input-default.text-area {
+  resize: none;
+  min-height: 100px;
+}
+
+/* line 108, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.input-default.inline {
+  display: inline-block;
+}
+
+/* line 113, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.select-default {
+  background-color: #CACACA;
+  color: white;
+  border: none;
+}
+
+/* line 121, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.select-default:hover, .select-default:active {
+  cursor: pointer;
+}
+
+/* line 127, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.select-default option:first-child {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+/* line 134, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.btn-default {
+  padding: 10px 10px;
+  background-color: #0082C8;
+  border: none;
+  border-bottom: solid 4px #006399;
+}
+
+/* line 142, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.btn-default.inline {
+  margin: 0 5px;
+}
+
+/* line 145, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.btn-default.inline:last-child {
+  margin-right: 0;
+}
+
+/* line 148, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.btn-default.inline:first-child {
+  margin-left: 0;
+}
+
+/* line 153, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.btn-default:hover {
+  background-color: #0070AD;
+}
+
+/* line 157, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.btn-default:active {
+  border-bottom: solid 2px #006399;
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
+  margin-bottom: 2px;
+}
+
+/* line 164, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.radio-default {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 169, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.radio-default:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #F7F7F7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  border: solid 1px #CACACA;
+}
+
+/* line 182, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.radio-default:checked:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #CACACA;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 100%;
+}
+
+/* line 195, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.nav-pills-default {
+  border-bottom: solid 1px #CACACA;
+  padding: 0 10px;
+}
+
+/* line 199, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.nav-pills-default .pill-default {
+  display: inline-block;
+  color: #0082C8;
+  padding: 15px;
+}
+
+/* line 206, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.nav-pills-default .pill-default.active {
+  -webkit-transform: TranslateY(1px);
+      -ms-transform: TranslateY(1px);
+          transform: TranslateY(1px);
+  background-color: #F7F7F7;
+  color: #7F7F7F;
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: solid 1px #CACACA;
+  border-left: solid 1px #CACACA;
+  border-right: solid 1px #CACACA;
+  border-bottom: none;
+}
+
+/* line 221, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.nav-pills-default .pill-default:hover {
+  cursor: pointer;
+}
+
+/* line 252, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-gap {
+  padding: 25px;
+  background-color: #F7F7F7;
+  margin: 10px;
+}
+
+/* line 258, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-compra {
+  width: 100%;
+}
+
+/* line 230, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-compra th,
+.table-compra td {
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 235, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-compra th:first-child,
+.table-compra td:first-child {
+  border-left: none;
+}
+
+/* line 239, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-compra th {
+  background-color: #95CCE8;
+}
+
+/* line 243, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-compra tr:nth-child(n) {
+  background-color: #E4F2F9;
+}
+
+/* line 246, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-compra tr:nth-child(2n) {
+  background-color: #CAE5F4;
+}
+
+/* line 261, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-compra th,
+.table-compra td {
+  width: 50%;
+  border-left: solid 2px white;
+}
+
+/* line 268, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-admin {
+  width: 100%;
+}
+
+/* line 230, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-admin th,
+.table-admin td {
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 235, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-admin th:first-child,
+.table-admin td:first-child {
+  border-left: none;
+}
+
+/* line 239, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-admin th {
+  background-color: #EDEDED;
+}
+
+/* line 243, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-admin tr:nth-child(n) {
+  background-color: #F0F0F0;
+}
+
+/* line 246, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-admin tr:nth-child(2n) {
+  background-color: #F7F7F7;
+}
+
+/* line 271, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-admin th,
+.table-admin td {
+  padding: 15px 0;
+}
+
+/* line 276, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_elements.scss */
+.table-admin tr {
+  border-bottom: solid 2px #D3D3D3;
+}
+
+/* line 1, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+section[role=modal] {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  z-index: 20;
+}
+
+/* line 14, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+section[role=modal].active {
+  display: block;
+}
+
+/* line 18, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+section[role=modal] [role=modal-container] {
+  padding: 20px;
+  margin-top: 100px;
+  width: 50%;
+  display: inline-block;
+  background-color: white;
+  overflow: auto;
+  text-align: left;
+  position: relative;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 668px) {
+  /* line 18, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+  section[role=modal] [role=modal-container] {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 667px) and (max-width: 1024px) {
+  /* line 18, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+  section[role=modal] [role=modal-container] {
+    width: 75%;
+  }
+}
+
+/* line 35, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+section[role=modal] [role=modal-container] article {
+  margin: 15px 0;
+}
+
+/* line 39, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+section[role=modal] [role=modal-container] .header-action {
+  padding-bottom: 10px;
+}
+
+/* line 43, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+section[role=modal] [role=modal-container] h5 {
+  margin: 5px 0;
+}
+
+/* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+section[role=modal] [role=modal-container] h5,
+section[role=modal] [role=modal-container] label {
+  color: #0082C8;
+}
+
+/* line 52, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/modulos/_modal.scss */
+section[role=modal] [role=modal-container] .preco {
+  display: inline-block;
+  padding: 5px;
+}
+
+/* line 2, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.detalhes article {
+  padding: 0 2%;
+}
+
+/* line 5, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.detalhes article h4 {
+  margin-bottom: 5px;
+}
+
+/* line 12, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.section-competencias table {
+  color: #CACACA;
+  width: 100%;
+}
+
+/* line 16, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.section-competencias table tr {
+  border-top: solid 1px #CACACA;
+}
+
+/* line 21, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.section-competencias table thead tr:first-child {
+  border-top: none;
+}
+
+/* line 26, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.section-competencias table th,
+.section-competencias table td {
+  width: 25%;
+  text-align: center;
+  border-left: solid 1px #CACACA;
+  padding: 10px 0;
+}
+
+/* line 33, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.section-competencias table th:first-child,
+.section-competencias table td:first-child {
+  border-left: none;
+}
+
+/* line 40, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.minha-avaliacao {
+  padding: 3px;
+}
+
+/* line 43, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.minha-avaliacao figure {
+  box-shadow: 0 0 8px rgba(150, 150, 150, 0.7);
+}
+
+/* line 47, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.minha-avaliacao .action {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 52, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.minha-avaliacao .avalie p {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* line 60, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha {
+  height: 250px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 60, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+  .consolidado-resenha {
+    height: auto;
+    text-align: center;
+  }
+}
+
+/* line 69, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha .badge {
+  border-radius: 100%;
+  border: solid 3px #CACACA;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  font-size: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 69, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+  .consolidado-resenha .badge {
+    display: inline-block;
+    margin: 20px;
+  }
+}
+
+/* line 84, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha .badge .badge-container {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 87, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha .badge .badge-container h1 {
+  font-size: 3.5rem;
+  color: #002664;
+  border: none;
+  margin: 0;
+}
+
+/* line 94, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha .badge .badge-container span {
+  margin: 15px;
+}
+
+/* line 98, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha .badge .badge-container p {
+  margin: 5px;
+  color: #7F7F7F;
+  font-weight: bold;
+}
+
+/* line 104, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha .badge .badge-container p:first-child {
+  margin-top: 10px;
+}
+
+/* line 111, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article {
+  margin-left: 30px;
+  width: calc(100% - 230px);
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 117, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+  .consolidado-resenha article.col-tablet-12 {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* line 124, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+/* line 130, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 134, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li span {
+  font-size: 1rem;
+}
+
+/* line 138, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li div[data-graph-bar] {
+  height: 100%;
+  margin-left: 10px;
+}
+
+/* line 144, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li:nth-child(1) div[data-graph-bar] {
+  background-color: #6CD500;
+}
+
+/* line 149, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li:nth-child(2) div[data-graph-bar] {
+  background-color: #97CA00;
+}
+
+/* line 154, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li:nth-child(3) div[data-graph-bar] {
+  background-color: #E3BC04;
+}
+
+/* line 159, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li:nth-child(4) div[data-graph-bar] {
+  background-color: #EB8F21;
+}
+
+/* line 164, C:/Projetos/TRABALHO/E-GURU/marketplace/EDA.Poc/Web/EDA.Poc.Web/Content/_sass/themes/_paginaDeDetalhes.scss */
+.consolidado-resenha article ul li:nth-child(5) div[data-graph-bar] {
+  background-color: #E42924;
+}

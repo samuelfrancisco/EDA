@@ -1,0 +1,28 @@
+﻿<section class="ov-auto">
+    <aside class="col-3 no-right col-tablet-12">
+        <figure>
+            <img src="@Model.Imagem" alt="@Model.Titulo" />
+        </figure>
+        <p class="secondary-color"><strong>Número de pessoas</strong></p>
+        <p><span class="destaque-1">@Model.QuantidadeDeAquisicoes pessoas</span></p>
+        <p class="tertiary-color text-center"><strong>@Model.CustoLabel </strong>por pessoa / mês</p>
+        <button class="btn-default full comprar"><i class="fa fa-cloud-download"></i> Comprar</button>
+    </aside>
+    <article class="col-9 no-right col-tablet-12">
+        <p class="secondary-color"><strong>@Model.Tipo </strong></p>
+        <p class="primary-color"><strong>@Model.Titulo </strong><span data-avaliacao="@Model.Avaliacao" class="fa inline estrelas inline"></span></p>
+        <h4>Objetivo</h4>
+        <span>@Model.Objetivo</span>
+        @Html.Raw(Model.Conteudo)
+        <h4>Carga Horária</h4>
+        <span>@Model.CargaHoraria</span>
+        @if (Model.PalavrasChave != null) {
+            <h4>Palavras Chaves</h4>
+            foreach (var palavraChave in Model.PalavrasChave){
+                <span class="destaque-3 inline">@palavraChave.Titulo</span>
+            }
+        }
+        <p class="secondary-color"><i class="fa fa-heart-o"></i> <a href="javascript:void(0)">Adicionar à lista de desejos</a></p>
+        <p class="secondary-color"><i class="fa fa-play"></i> <a href="javascript:void(0)">Amostra Gratis</a></p>
+    </article>
+</section>

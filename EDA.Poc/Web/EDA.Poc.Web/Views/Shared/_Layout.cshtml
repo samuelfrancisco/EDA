@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet"  href="~/Content/css/style.css" />
+    <link rel="stylesheet" href="~/Content/css/vendors/fontAwesome/font-awesome.css" />
+</head>
+<body>
+    @RenderSection("Styles", false)
+
+    @RenderBody()
+
+    @Html.Partial("_Footer")
+    @Html.Partial("_Alerts")
+
+    <script>
+        window.eguru = window.eguru || {};
+        window.eguru.marketPlace = window.eguru.marketPlace || {};
+        window.eguru.marketPlace.baseUrl = '@Url.Content("~/")';
+    </script>
+
+    @RenderSection("Scripts", false)
+</body>
+</html>

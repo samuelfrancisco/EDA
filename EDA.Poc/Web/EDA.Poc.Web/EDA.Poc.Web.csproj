@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB8242AE-A286-4F01-80F8-1ECF8EB4EEF5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDA.Poc.Web</RootNamespace>
+    <AssemblyName>EDA.Poc.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Windsor.4.1.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor.Lifestyles, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Windsor.Lifestyles.0.4.0\lib\net45\Castle.Windsor.Lifestyles.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor.Web.Mvc, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Windsor.Web.Mvc.1.0.7\lib\net40\Castle.Windsor.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FoolproofValidation, Version=0.9.5851.39121, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Foolproof.0.9.4518\lib\net45\FoolproofValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Glimpse.AspNet, Version=1.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Glimpse.AspNet.1.9.2\lib\net45\Glimpse.AspNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Glimpse.Core, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Glimpse.1.8.6\lib\net45\Glimpse.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Glimpse.Mvc5, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Glimpse.Mvc5.1.5.3\lib\net45\Glimpse.Mvc5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GreenPipes, Version=1.2.0.96, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\GreenPipes.1.2.0\lib\net452\GreenPipes.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MassTransit, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MassTransit.3.5.7\lib\net452\MassTransit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MassTransit.Log4NetIntegration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MassTransit.Log4Net.3.5.7\lib\net452\MassTransit.Log4NetIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MassTransit.RabbitMqTransport, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MassTransit.RabbitMQ.3.5.7\lib\net452\MassTransit.RabbitMqTransport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MassTransit.WindsorIntegration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MassTransit.CastleWindsor.3.5.7\lib\net452\MassTransit.WindsorIntegration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.1.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28\lib\net46\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NewId, Version=3.0.1.17, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NewId.3.0.1\lib\net452\NewId.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RabbitMQ.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\RabbitMQ.Client.5.0.1\lib\net451\RabbitMQ.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logo_lms.png" />
+    <Content Include="Content\js\Licencas\index-ui.js" />
+    <Content Include="Content\js\Licencas\index.js" />
+    <Content Include="Content\js\vendors\foolproof\mvcfoolproof.unobtrusive.custom.js" />
+    <Content Include="Content\js\vendors\foolproof\mvcfoolproof.unobtrusive.custom.min.js" />
+    <Content Include="Content\js\vendors\foolproof\mvcfoolproof.unobtrusive.js" />
+    <Content Include="Content\js\vendors\foolproof\mvcfoolproof.unobtrusive.min.js" />
+    <Content Include="Content\js\vendors\foolproof\MvcFoolproofJQueryValidation.js" />
+    <Content Include="Content\js\vendors\foolproof\MvcFoolproofJQueryValidation.min.js" />
+    <Content Include="Content\js\vendors\foolproof\MvcFoolproofValidation.js" />
+    <Content Include="Content\js\vendors\foolproof\MvcFoolproofValidation.min.js" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\style.min.css" />
+    <Content Include="Content\gulpfile.js" />
+    <Content Include="Content\img\loading.gif" />
+    <Content Include="Content\js\Conteudo\detalhe-ui.js" />
+    <Content Include="Content\js\Conteudo\detalhe.js" />
+    <Content Include="Content\js\geral.js" />
+    <Content Include="Content\js\PaginaInicial\pagina-inicial-ui.js" />
+    <Content Include="Content\js\PaginaInicial\pagina-inicial.js" />
+    <Content Include="Content\css\vendors\fontAwesome\font-awesome.css" />
+    <Content Include="Content\css\vendors\fontAwesome\font-awesome.min.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Areas\Api\Views\Web.config" />
+    <Content Include="Areas\Lms\Views\Web.config" />
+    <Content Include="Content\js\vendors\jcarousellite\jcarousellite_1.0.2.js" />
+    <Content Include="Content\js\vendors\jcarousellite\jegurucarousel.js" />
+    <None Include="Content\js\vendors\jquery.validation\jquery.validate-vsdoc.js" />
+    <Content Include="Content\js\vendors\jquery.validate.unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="Content\js\vendors\jquery.validate.unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\js\vendors\jquery.validation\jquery.validate.js" />
+    <Content Include="Content\js\vendors\jquery.validation\jquery.validate.min.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_ar.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_bg.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_ca.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_cs.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_da.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_de.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_el.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_es.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_et.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_eu.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_fa.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_fi.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_fr.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_he.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_hr.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_hu.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_it.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_ja.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_ka.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_kk.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_lt.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_lv.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_my.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_nl.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_no.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_pl.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_pt_BR.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_pt_PT.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_ro.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_ru.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_si.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_sk.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_sl.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_sr.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_sv.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_th.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_tr.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_uk.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_vi.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_zh.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\messages_zh_TW.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\methods_de.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\methods_nl.js" />
+    <Content Include="Content\js\vendors\jquery.validation\localization\methods_pt.js" />
+    <Content Include="Content\js\vendors\jquery.maskedinput\jquery.maskedinput.js" />
+    <Content Include="Content\js\vendors\jquery.maskedinput\jquery.maskedinput.min.js" />
+    <Content Include="Content\js\vendors\jquery.numeric\jquery.numeric.js" />
+    <None Include="Content\js\vendors\jquery\jquery-3.1.1.intellisense.js" />
+    <Content Include="Content\js\vendors\jquery\jquery-3.1.1.js" />
+    <Content Include="Content\js\vendors\jquery\jquery-3.1.1.min.js" />
+    <Content Include="Content\js\vendors\jquery\jquery-3.1.1.slim.js" />
+    <Content Include="Content\js\vendors\jquery\jquery-3.1.1.slim.min.js" />
+    <Content Include="Content\js\vendors\pickadate\legacy.js" />
+    <Content Include="Content\js\vendors\pickadate\picker.date.js" />
+    <Content Include="Content\js\vendors\pickadate\picker.js" />
+    <Content Include="Content\js\vendors\pickadate\picker.time.js" />
+    <Content Include="Content\js\vendors\pickadate\themes\classic.css" />
+    <Content Include="Content\js\vendors\pickadate\themes\classic.date.css" />
+    <Content Include="Content\js\vendors\pickadate\themes\classic.time.css" />
+    <Content Include="Content\js\vendors\pickadate\themes\default.css" />
+    <Content Include="Content\js\vendors\pickadate\themes\default.date.css" />
+    <Content Include="Content\js\vendors\pickadate\themes\default.time.css" />
+    <Content Include="Content\js\vendors\pickadate\themes\rtl.css" />
+    <Content Include="Content\js\vendors\pickadate\translations\ar.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\bg_BG.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\bs_BA.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\ca_ES.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\cs_CZ.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\da_DK.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\de_DE.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\el_GR.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\es_ES.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\et_EE.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\eu_ES.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\fi_FI.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\fr_FR.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\gl_ES.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\he_IL.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\hi_IN.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\hr_HR.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\hu_HU.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\id_ID.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\is_IS.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\it_IT.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\ja_JP.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\ko_KR.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\lt_LT.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\lv_LV.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\nb_NO.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\ne_NP.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\nl_NL.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\no_NO.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\pl_PL.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\pt_BR.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\pt_PT.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\ro_RO.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\ru_RU.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\sk_SK.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\sl_SI.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\sv_SE.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\th_TH.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\tr_TR.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\uk_UA.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\vi_VN.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\zh_CN.js" />
+    <Content Include="Content\js\vendors\pickadate\translations\zh_TW.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\js\vendors\jquery\jquery-3.1.1.min.map" />
+    <Content Include="Content\js\vendors\jquery\jquery-3.1.1.slim.min.map" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\ContainerBootstrapper.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Api\ApiAreaRegistration.cs" />
+    <Compile Include="Areas\Lms\Controllers\AcessoController.cs" />
+    <Compile Include="Areas\Lms\LmsAreaRegistration.cs" />
+    <Compile Include="Controllers\LicencasController.cs" />
+    <Compile Include="Plumbing\WindsorResolver.cs" />
+    <Compile Include="ViewModels\AvaliarViewModel.cs" />
+    <Compile Include="Controllers\ConteudoController.cs" />
+    <Compile Include="Controllers\PaginaInicialController.cs" />
+    <Compile Include="Areas\Api\Controllers\LicencasAdquiridasController.cs" />
+    <Compile Include="Extensions\MvcExtensions\ValidationAttributes\MaiorQueZeroIfAttribute.cs" />
+    <Compile Include="Extensions\MvcExtensions\MultipartialResult.cs" />
+    <Compile Include="App_Start\WindsorActivator.cs" />
+    <Compile Include="GlimpseSecurityPolicy.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Installers\CommandBusInstaller.cs" />
+    <Compile Include="Installers\ControllersInstaller.cs" />
+    <Compile Include="Plumbing\WindsorControllerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\DadosDeCompraViewModel.cs" />
+    <Compile Include="ViewModels\FiltroDeLicencasViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Readme.md" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\PaginaInicial\Index.cshtml" />
+    <Content Include="Views\PaginaInicial\_ListaLancamentos.cshtml" />
+    <Content Include="Views\PaginaInicial\_ListaMaisPopulares.cshtml" />
+    <Content Include="Views\PaginaInicial\_ListaRecomendados.cshtml" />
+    <Content Include="Views\PaginaInicial\_ListaDestaquesDaSemana.cshtml" />
+    <Content Include="Views\PaginaInicial\_Loading.cshtml" />
+    <Content Include="Content\_sass\modulos\_all.scss" />
+    <Content Include="Content\_sass\style.scss" />
+    <Content Include="Content\_sass\core\_all.scss" />
+    <Content Include="Content\_sass\core\_mixins.scss" />
+    <Content Include="Content\_sass\core\_functions.scss" />
+    <Content Include="Content\_sass\base\_variables.scss" />
+    <Content Include="Content\_sass\base\_all.scss" />
+    <Content Include="Content\_sass\core\_placeholders.scss" />
+    <Content Include="Content\_sass\themes\_all.scss" />
+    <Content Include="Content\_sass\base\_settings.scss" />
+    <Content Include="Content\_sass\base\_settings_postcss.scss" />
+    <Content Include="Content\_sass\modulos\_carousel.scss" />
+    <Content Include="Content\_sass\core\_normalize.scss" />
+    <Content Include="Content\_sass\modulos\_lists.scss" />
+    <Content Include="Content\_sass\modulos\_avaliacao.scss" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Content\_sass\modulos\_sections.scss" />
+    <Content Include="Views\Conteudo\_ListaPreviews.cshtml" />
+    <Content Include="Views\Conteudo\_ListaSemelhantes.cshtml" />
+    <Content Include="Views\Conteudo\_Loading.cshtml" />
+    <Content Include="Views\Conteudo\Detalhes.cshtml" />
+    <Content Include="Content\_sass\core\_helpers.scss" />
+    <Content Include="Content\_sass\themes\_paginaDeDetalhes.scss" />
+    <Content Include="Content\_sass\themes\_paginaInicial.scss" />
+    <Content Include="Views\Conteudo\_ListaMaisDoFornecedor.cshtml" />
+    <Content Include="Views\Conteudo\_Detalhes.cshtml" />
+    <Content Include="Views\Conteudo\_ListaCompetencias.cshtml" />
+    <Content Include="Views\Conteudo\_ConsolidadoAvaliacoes.cshtml" />
+    <Content Include="Views\Conteudo\_ListaResenhas.cshtml" />
+    <Content Include="Content\_sass\modulos\_elements.scss" />
+    <Content Include="Views\Conteudo\_ComprarConteudo.cshtml" />
+    <Content Include="Content\_sass\modulos\_modal.scss" />
+    <Content Include="Views\Conteudo\_MinhaAvaliacao.cshtml" />
+    <Content Include="Content\_sass\base\_component.scss" />
+    <Content Include="Views\Licencas\Index.cshtml" />
+    <Content Include="Views\Conteudo\_ModalPreview.cshtml" />
+    <Content Include="Views\Licencas\_ListaLicencas.cshtml" />
+    <Content Include="Views\Licencas\_FiltroLicencas.cshtml" />
+    <Content Include="Views\Licencas\_Loading.cshtml" />
+    <None Include="Properties\PublishProfiles\Samuel-FileSystem.pubxml" />
+    <None Include="Properties\PublishProfiles\Samuel-IIS.pubxml" />
+    <Content Include="Views\Shared\_Alerts.cshtml" />
+    <Content Include="Views\Shared\_UsuarioMenu.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Api\Models\" />
+    <Folder Include="Areas\Api\Views\Shared\" />
+    <Folder Include="Areas\Lms\Models\" />
+    <Folder Include="Areas\Lms\Views\Shared\" />
+    <Folder Include="Content\_sass\plugins\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EDA.Poc.Infraestrutura.EventStore\EDA.Poc.Infraestrutura.EventStore.csproj">
+      <Project>{767223fc-d7ff-4348-8fa8-c66fb5c2e0a8}</Project>
+      <Name>EDA.Poc.Infraestrutura.EventStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infraestrutura\EDA.Poc.Infraestrutura.MongoDb\EDA.Poc.Infraestrutura.MongoDb.csproj">
+      <Project>{8558d4de-cbb3-4eae-876e-6035b3f32dc8}</Project>
+      <Name>EGuru.MarketPlace.Infraestrutura.MongoDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infraestrutura\EDA.Poc.Infraestrutura\EDA.Poc.Infraestrutura.csproj">
+      <Project>{f9948814-029f-48db-84f1-a86eddf9ca99}</Project>
+      <Name>EGuru.MarketPlace.Infraestrutura</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Commands\EDA.Poc.Pagamentos.Commands.csproj">
+      <Project>{cc78a7d0-0069-40e3-b55e-1692edf5528d}</Project>
+      <Name>EGuru.MarketPlace.Loja.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Consultas.MongoDb\EDA.Poc.Pagamentos.Consultas.MongoDb.csproj">
+      <Project>{08881ee8-bc28-4757-a591-d387d4669020}</Project>
+      <Name>EGuru.MarketPlace.Loja.Consultas.MongoDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Consultas\EDA.Poc.Pagamentos.Consultas.csproj">
+      <Project>{ab5a9cd4-4148-4e4a-82cc-615871fc7dbf}</Project>
+      <Name>EGuru.MarketPlace.Loja.Consultas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Domain.Enums\EDA.Poc.Pagamentos.Domain.Enums.csproj">
+      <Project>{e812fbad-1ace-43f5-85fc-3f95848c855a}</Project>
+      <Name>EGuru.MarketPlace.Loja.Domain.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.Domain\EDA.Poc.Pagamentos.Domain.csproj">
+      <Project>{4fd0e1d6-a2ac-498f-8f37-11157c32efb4}</Project>
+      <Name>EGuru.MarketPlace.Loja.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pagamentos\EDA.Poc.Pagamentos.ReadModel\EDA.Poc.Pagamentos.ReadModel.csproj">
+      <Project>{6287d369-2b5b-42d8-8a71-1834f0890b89}</Project>
+      <Name>EGuru.MarketPlace.Loja.ReadModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3620</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:34002/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

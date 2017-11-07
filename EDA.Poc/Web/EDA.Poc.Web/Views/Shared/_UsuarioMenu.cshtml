@@ -1,0 +1,28 @@
+﻿@using System.Configuration
+
+@{
+    var imgPath = ConfigurationManager.AppSettings["CaminhoDasImagens"];
+}
+
+<header>
+    <h1>
+        <div class="col-6 no-right no-float">
+            <a href="@Url.Action("Index", "PaginaInicial")">
+                <img src="~/Content/img/logo.png">
+            </a>
+        </div>
+        <div class="col-6 text-right no-right no-float" >
+            <div class="text-center container-tooltip">
+                <a href="http://saas.e-guru.com.br/Site/Princing" target="_blank"><img src="~/Content/img/logo_lms.png"></a>
+                <div class="tooltip active">
+                    <span>Ainda não possui um LMS? Clique aqui, contrate a melhor solução do mercado e comece a utilizar.</span>
+                </div>
+            </div>
+            <img class="image-usuario" src="@string.Format("{0}{1}", imgPath, "Usuario/a59e8e09-6669-4412-aa7d-9a3b2e82adb1-Default.png")">
+            <div class="text-left">
+                <span> Felipe Azevedo </span>
+                <a href="@Url.Action("Index", "Licencas")">Meu perfil</a>
+            </div>
+        </div>
+    </h1>
+</header>

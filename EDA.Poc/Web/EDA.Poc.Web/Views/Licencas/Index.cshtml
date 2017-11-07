@@ -1,0 +1,80 @@
+﻿@model EDA.Poc.Pagamentos.ReadModel.PaginaDeLicencas.PaginaDeLicencas
+@using System.Web.Optimization;
+@using EDA.Poc.Web.ViewModels;
+@using System.Configuration;
+
+@{
+    var dataAtual = DateTime.Now;
+
+    var proximaData = dataAtual.AddMonths(1);
+
+    var data = new DateTime(proximaData.Year, proximaData.Month, 1);
+
+    var faturaDoMes = Model.ObterFaturaDoMes(data.Month, data.Year);
+
+    var totalDoMes = faturaDoMes != null ? faturaDoMes.TotalDaFaturaLabel : "R$ 0,00/mês";
+
+    var imgPath = ConfigurationManager.AppSettings["CaminhoDasImagens"];
+}
+
+<header>
+    <h1>
+        <div class="col-6 no-float no-right" >
+            <a href="@Url.Action("Index", "PaginaInicial")">
+                <img src="~/Content/img/logo.png">
+            </a>
+        </div>
+        <div class="col-6 text-right no-float no-right">
+            <div class="text-center container-tooltip">
+                <a href="http://saas.e-guru.com.br/Site/Princing" target="_blank"><img src="~/Content/img/logo_lms.png"></a>
+                <div class="tooltip active">
+                    <span>Ainda não possui um LMS? Clique aqui, contrate a melhor solução do mercado e comece a utilizar.</span>
+                </div>
+            </div>
+            <img class="image-usuario" src="@string.Format("{0}{1}", imgPath, "Usuario/a59e8e09-6669-4412-aa7d-9a3b2e82adb1-Default.png")">
+            <div class="text-left">
+                <span> Felipe Azevedo </span>
+                <a href="@Url.Action("Index", "PaginaInicial")">Pagina inicial</a>
+            </div>
+        </div>
+    </h1>
+</header>
+<main>
+    <section>
+        <section class="well-destaque">
+            <p><strong>@string.Format("Vencimento em {0}", data.ToShortDateString())</strong></p>
+            <h3>@totalDoMes</h3>
+        </section>
+        <section class="well">
+            @Html.Partial("_FiltroLicencas", new FiltroDeLicencasViewModel())
+        </section>
+        <section>
+            <div class="col-12 nav-pills-default">
+                <div class="pill-default active">Licenças Ativas</div>
+                @*<div class="pill-default">Histórico</div>*@
+            </div>
+        </section>
+        <section class="col-12 ov-auto well lista-licencas">
+            @Html.Partial("_Loading")
+        </section>
+    </section>
+</main>
+
+@section Styles {
+    @Styles.Render("~/Content/js/vendors/pickadate/themes/all")
+}
+
+@section Scripts {
+    <!-- Vendors -->
+    @Scripts.Render("~/Content/js/vendors/jquery/all")
+
+     <!-- PickaDate -->
+    @Scripts.Render("~/Content/js/vendors/pickadate/all")
+
+    <!-- Core -->
+    @Scripts.Render("~/Content/all")
+
+    <!-- Tela -->
+    <script src="~/Content/js/Licencas/index-ui.js"></script>
+    <script src="~/Content/js/Licencas/index.js"></script>
+}

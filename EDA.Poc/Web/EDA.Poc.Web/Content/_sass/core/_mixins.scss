@@ -1,0 +1,649 @@
+﻿//@include component('mixins', ('placeholders'));
+
+// Preload images by setting them to a background-image on the html:after element.
+// @usage: http://codepen.io/pixelass/pen/vEKZRq/?editors=1100
+@mixin image-preload($preload: run) {
+	@if not variable-exists(_preload-image-list) {
+		$_preload-image-list: ()!global;
+	}
+	@if not variable-exists(_preload-image-urls) {
+		$_preload-image-urls: ()!global;
+	}
+	@if not variable-exists(_preload-images-loaded) {
+		$_preload-images-loaded: false!global;
+	}
+	@if $preload == run and not $_preload-images-loaded {
+		$_preload-images-loaded: true!global;
+		html:after {
+			content: '';
+			display: none;
+			background-image: $_preload-image-urls;
+		}
+	} @else {
+		$_preload-image-list: join($preload, $_preload-image-list)!global;
+		$image-urls: ();
+		@if length($_preload-image-list) > 0 {
+			@for $i from 1 through length($_preload-image-list) {
+				$image-urls: join(url(#{nth($_preload-image-list,$i)}), $image-urls);
+			}
+			$result: ();
+			@each $item in $image-urls {
+				@if not index($result, $item) {
+					$result: append($result, $item, comma);
+				}
+			}
+			$_preload-image-urls: $result!global;
+		}
+	}
+}
+
+// @usage: @include media-query($min-width: $min, $max-width: $max, $orientation: $orientation){}
+@mixin media-query($args...) {
+	$media-type: 'only screen';
+	$media-type-key: 'media-type';
+	$args: keywords($args);
+	$expr: '';
+	@if map-has-key($args, $media-type-key) {
+		$media-type: map-get($args, $media-type-key);
+		$args: map-remove($args, $media-type-key);
+	}
+	@each $key, $value in $args {
+		@if $value {
+			$expr: "#{$expr} and (#{$key}: #{$value})";
+		}
+	}
+	@media #{$media-type} #{$expr} {
+		@content;
+	}
+}
+
+// @usage: @include screenX(1px, 568px, portrait){}
+@mixin screenX($min: false, $max: false, $orientation: false) {
+	@include media-query($min-width: $min, $max-width: $max, $orientation: $orientation) {
+		@content;
+	}
+}
+
+// @usage: @include screenY(1px, 568px, portrait){}
+@mixin screenY($min: false, $max: false, $orientation: false) {
+	@include media-query($min-height: $min, $max-height: $max, $orientation: $orientation) {
+		@content;
+	}
+}
+
+// @usage: @include screen-resolutionX(xl){}
+@mixin screen-resolutionX($size: nil){
+	@if $size == 'xs' {
+		@include screenX($max: em($layout-xs-width)){
+			@content;
+		}
+	} @else if $size == 'sm' {
+		@include screenX($min: em($layout-xs-width + 0.1), $max: em($layout-sm-width)){
+			@content;
+		}
+	} @else if $size == 'md' {
+		@include screenX($min: em($layout-sm-width + 0.1), $max: em($layout-md-width)){
+			@content;
+		}
+	} @else if $size == 'lg' {
+		@include screenX($min: em($layout-md-width + 0.1), $max: em($layout-lg-width)){
+			@content;
+		}
+	} @else {
+		@include screenX($min: em($layout-xl-width + 0.1)){
+			@content;
+		}
+	}
+}
+
+// @usage: @include screen-resolutionY(xl){}
+@mixin screen-resolutionY($size: nil){
+	@if $size == 'xs' {
+		@include screenY($max: em($layout-xs-height)){
+			@content;
+		}
+	} @else if $size == 'sm' {
+		@include screenY($min: em($layout-xs-height + 0.1), $max: em($layout-sm-height)){
+			@content;
+		}
+	} @else if $size == 'md' {
+		@include screenY($min: em($layout-sm-height + 0.1), $max: em($layout-md-height)){
+			@content;
+		}
+	} @else if $size == 'lg' {
+		@include screenY($min: em($layout-md-height + 0.1), $max: em($layout-lg-height)){
+			@content;
+		}
+	} @else {
+		@include screenY($min: em($layout-xl-height + 0.1)){
+			@content;
+		}
+	}
+}
+
+// @include offset(nil 0 nil 5px);
+@mixin offset($trbl: nil) {
+	@if length($trbl) == 1 {
+		$position: top, right, bottom, left;
+		@if $trbl != nil {
+			@each $property in $position {
+				#{$property}: $trbl;
+			}
+		}
+	} @else if length($trbl) == 2 {
+		@if nth($trbl, 1) != nil {
+			top: nth($trbl, 1);
+			bottom: nth($trbl, 1);
+		}
+		@if nth($trbl, 2) != nil {
+			right: nth($trbl, 2);
+			left: nth($trbl, 2);
+		}
+	} @else if length($trbl) == 3 {
+		@if nth($trbl, 1) != nil {
+			top: nth($trbl, 1);
+		}
+		@if nth($trbl, 2) != nil {
+			right: nth($trbl, 2);
+			left: nth($trbl, 2);
+		}
+		@if nth($trbl, 3) != nil {
+			bottom: nth($trbl, 3);
+		}
+	} @else if length($trbl) == 4 {
+		@if nth($trbl, 1) != nil {
+			top: nth($trbl, 1);
+		}
+		@if nth($trbl, 2) != nil {
+			right: nth($trbl, 2);
+		}
+		@if nth($trbl, 3) != nil {
+			bottom: nth($trbl, 3);
+		}
+		@if nth($trbl, 4) != nil {
+			left: nth($trbl, 4);
+		}
+	}
+}
+
+// @usage: @include position(absolute, 13px 51px auto auto);
+@mixin position($shorthand, $offsets: nil) {
+	@if $shorthand != nil {
+		@if $shorthand == "static" {
+			position: static;
+		} @else if $shorthand == "relative" {
+			position: relative;
+		} @else if $shorthand == "absolute" {
+			position: absolute;
+		} @else if $shorthand == "fixed" {
+			position: fixed;
+		} @else {
+			@debug "position only accepts 'static, relative, absolute, fixed' as shorthands";
+		}
+	}
+	@include offset($offsets);
+}
+
+// @usage: @include static(13px 51px auto auto);
+@mixin static($args: nil) {
+	@include position(static, $args);
+}
+
+// @usage: @include absolute(13px 51px auto auto);
+@mixin absolute($args: nil) {
+	@include position(absolute, $args);
+}
+
+// @usage: @include fixed(13px 51px auto auto);
+@mixin fixed($args: nil) {
+	@include position(fixed, $args);
+}
+
+// @usage: @include relative(13px 51px auto auto);
+@mixin relative($args: nil) {
+	@include position(relative, $args);
+}
+
+// @usage: @include size(nil 59px);
+@mixin size($point: nil) {
+	@if length($point) == 1 {
+		@if nth($point, 1) != nil {
+			width: nth($point, 1);
+			height: nth($point, 1);
+		}
+	} @else if length($point) == 2 {
+		@if nth($point, 1) != nil {
+			width: nth($point, 1);
+		}
+		@if nth($point, 2) != nil {
+			height: nth($point, 2);
+		}
+	}
+}
+
+// @usage: @include min-size(170px nil);
+@mixin min-size($point: nil) {
+	@if length($point) == 1 {
+		@if nth($point, 1) != nil {
+			min-width: nth($point, 1);
+			min-height: nth($point, 1);
+		}
+	} @else if length($point) == 2 {
+		@if nth($point, 1) != nil {
+			min-width: nth($point, 1);
+		}
+		@if nth($point, 2) != nil {
+			min-height: nth($point, 2);
+		}
+	}
+}
+
+// @usage: @include max-size(170px 59px);
+@mixin max-size($point: nil) {
+	@if length($point) == 1 {
+		@if nth($point, 1) != nil {
+			max-width: nth($point, 1);
+			max-height: nth($point, 1);
+		}
+	} @else if length($point) == 2 {
+		@if nth($point, 1) != nil {
+			max-width: nth($point, 1);
+		}
+		@if nth($point, 2) != nil {
+			max-height: nth($point, 2);
+		}
+	}
+}
+
+// @usage: @include font-size(14px);
+@mixin font-size($size: $font-size-base) {
+	font-size: $size;
+	font-size: rem($size);
+}
+
+// @usage: @include line-height(14px);
+@mixin line-height($size: $font-size-base) {
+	line-height: $size;
+	@if unit($size) == 'px' {
+		line-height: rem($size);
+	}
+}
+
+// @usage: @include text-format(10px);
+@mixin text-format($family: sans-serif, $size: $font-size-base, $line-height: $size, $color: black) {
+	@include font-size($line-height);
+	@include line-height($line-height);
+	font-family: $family;
+	color: $color;
+}
+
+// @usage: @include hide-text;
+@mixin hide-text() {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+}
+
+// @usage: @include zoom(0.5);
+@mixin zoom($value: 1) {
+	$zoom: $value * 100;
+	-ms-zoom: $value;
+	-ms-transform-origin: 0 0;
+	-moz-transform: scale($value);
+	-moz-transform-origin: 0 #{$zoom}px;
+	-o-transform: scale($value);
+	-o-transform-origin: 0 #{$zoom}px;
+	-webkit-transform: scale($value);
+	-webkit-transform-origin: 0 0;
+}
+
+// @usage: @include opacity(0.8);
+@mixin opacity($opacity: 0.99) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=#{$opacity-ie});
+	filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=#{$opacity-ie})";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=#{$opacity-ie})";
+}
+
+// @usage: @include generate-grid;
+@mixin generate-grid($prefix: 'u', $columns: $layout-columns, $gutter: $layout-GutterWidth){
+	@if str-length(#{$prefix}) == 0{
+		$prefix: 'u';
+	}
+	$prefix: #{$prefix}-;
+	[class*="#{$prefix}"]{
+		$side: get-layout-direction();
+		float: $side;
+		clear: none;
+	}
+	@each $length in $columns{
+		@for $size from 1 through $length{
+			@if length($columns) > 1 {
+				$suffix:x#{$length};
+			} @else {
+				$suffix:'';
+			}
+			.#{$prefix}#{$size}#{$suffix}{
+				@include column($size/$length);
+			}
+			@if $size < $length{
+				.#{$prefix}offset-#{$size}#{$suffix}{
+					@include shift($size/$length);
+				}
+			}
+		}
+	}
+}
+
+// Style an element as a column with a gutter.
+@mixin column($ratios: 1, $offset: 0, $cycle: 0, $gutter: $layout-GutterWidth) {
+	$side: get-layout-direction();
+	$opposite-side: opposite-direction($side);
+	$column-widths: get-column($ratios, $gutter);
+	$margin-last: 0;
+	$margin-l: $margin-last;
+	$margin-r: nth($column-widths, 2);
+	@if $offset != 0 {
+		@if $offset < 0 {
+			$offset: $offset * -1;
+			$offset: nth(get-column($offset, nth($column-widths, 2)), 1);
+			$margin-last: $offset + nth($column-widths, 2) * 2;
+			$margin-r: $margin-last;
+		} @else {
+			$offset: nth(get-column($offset, nth($column-widths, 2)), 1);
+			$margin-l: $offset + nth($column-widths, 2);
+		}
+	}
+	width: percent(nth($column-widths, 1));
+	float: $side;
+	clear: none;
+	margin:{ #{$side}: percent($margin-l); #{$opposite-side}: percent($margin-r); };
+	@if $cycle != 0 {
+		&:nth-of-type(n) {
+			margin-#{opposite-direction($side)}: percent($margin-r);
+			float: $side;
+			clear: none;
+		}
+		&:nth-of-type(#{$cycle}n) {
+			margin-#{opposite-direction($side)}: percent($margin-last);
+			float: opposite-direction($side);
+		}
+		&:nth-of-type(#{$cycle}n + 1) {
+			clear: both;
+		}
+	} @else {
+		&:last-child {
+			margin-#{opposite-direction($side)}: percent($margin-last);
+		}
+	}
+}
+
+// Style an element as a column without any gutters for a seamless row
+@mixin span($ratio: 1, $offset: 0, $cycle: 0, $uncycle: 0) {
+	$side: get-layout-direction();
+	$opposite-side: opposite-direction($side);
+	$span-width: $ratio;
+	$margin-r: 0;
+	$margin-l: $margin-r;
+	@if $offset != 0 {
+		@if $offset < 0 {
+			$offset: $offset * -1;
+			$margin-r: get-span($offset);
+		} @else {
+			$margin-l: get-span($offset);
+		}
+	}
+	@include span-width($span-width);
+	float: $side;
+	clear: none;
+	margin:{
+		#{$side}: percent($margin-l);
+		#{$opposite-side}: percent($margin-r);
+	};
+	@if $cycle != 0 {
+		&:nth-of-type(#{$cycle}n) {
+			float: $opposite-side;
+		}
+		&:nth-of-type(#{$cycle}n + 1) {
+			clear: both;
+		}
+	}
+	@if $uncycle != 0 {
+		&:nth-of-type(#{$uncycle}n) {
+			float: $side;
+		}
+		&:nth-of-type(#{$uncycle}n + 1) {
+			clear: none;
+		}
+	}
+}
+
+// Set span width
+@mixin span-width($ratio: 1){
+	$span-width: get-span($ratio);
+	width: percent($span-width);
+}
+
+// Reorder columns without altering the HTML
+@mixin shift($ratios: 0, $col-or-span: column, $gutter: $layout-GutterWidth) {
+	$translate: '';
+	$side: get-layout-direction();
+	@if $side == right {
+		$ratios: replace-nth($ratios, 0, nth($ratios, 1) * -1);
+	}
+	@if index("column" "col" "c", $col-or-span) {
+		$column-widths: get-column($ratios, $gutter);
+		$translate: nth($column-widths, 1) + nth($column-widths, 2);
+	} @else {
+		$translate: get-span($ratios);
+	}
+	left: percent($translate);
+}
+
+// View the grid and its layers for easy debugging
+@mixin edit($color: random-color(), $alpha: 0.05, $important: false) {
+	@if $important {
+		* {
+			background: rgba($color, $alpha) !important;
+		}
+	} @else {
+		* {
+			background: rgba($color, $alpha);
+		}
+	}
+}
+
+// Sets padding on the left and right.
+@mixin pad($pad: $layout-MarginWidth) {
+	padding: { left: $pad; right: $pad; };
+}
+
+// Horizontally center an element
+@mixin center($max-width: $layout-MaxWidth, $pad: 0) {
+	max-width: $max-width;
+	width: auto;
+	float: none;
+	display: block;
+	margin: { right: auto; left: auto; };
+	@include pad($pad);
+}
+
+// Stack an element so that nothing is either side of it
+@mixin stack($pad: 0, $align: false) {
+	$side: get-layout-direction();
+	$opposite-side: opposite-direction($side);
+	width: 100%;
+	display: block;
+	clear: both;
+	float: none;
+	margin:{ left: auto; right: auto; };
+	&:first-child {
+		margin-#{$side}: auto;
+	}
+	&:last-child {
+		margin-#{$opposite-side}: auto;
+	}
+	@if $pad != 0 {
+		@include pad($pad);
+	}
+	@if ($align is not false) {
+		@if index("center" "c", $align) {
+			text-align: center;
+		} @else if index("left" "l", $align) {
+			text-align: left;
+		} @else if index("right" "r", $align) {
+			text-align: right;
+		}
+	}
+}
+
+// Center an element on either or both axes. Requires a parent element with relative positioning
+@mixin align($direction: both) {
+	@include absolute;
+	transform-style: preserve-3d;
+	@if index("horizontal" "h", $direction) {
+		left: 50%;
+		transform: translateX(-50%);
+	} @else if index("vertical" "v", $direction) {
+		top: 50%;
+		transform: translateY(-50%);
+	} @else if index("none", $direction) {
+		@include offset(auto nil nil auto);
+		transform: translate(0, 0);
+	} @else {
+		@include offset(50% nil nil 50%);
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+// Uncenter an element
+// @usage: @extend uncenter;
+@mixin uncenter {
+	width: none;
+	margin: { right: 0; left: 0; };
+	@include pad(0);
+}
+
+// Reset an element that has had shift() applied to it
+// @usage: @extend %unshift;
+@mixin unshift {
+	position: static;
+	left: 0;
+}
+
+// Unstack an element.
+// @usage: @include unstack;
+@mixin unstack {
+	$side: get-layout-direction();
+	$opposite-side: opposite-direction($side);
+	width: auto;
+	text-align: $side;
+	display: inline;
+	clear: none;
+	margin:{ left: 0; right: 0; };
+	&:first-child {
+		margin-#{$side}: 0;
+	}
+	&:last-child {
+		margin-#{opposite-direction($side)}: 0;
+	}
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// From specific project
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin primary-shadow($border-width: 4px, $button-depth: 10px, $active: 0, $color: $color-Atlantis, $border-color: black){
+	$depth: $button-depth;
+
+	@if to-bool($active){
+		$depth: 0;
+	}
+
+	box-shadow:
+		0 $depth 0 $color,
+		0 $border-width 0 $border-color,
+		$border-width ($button-depth + $border-width) 0 $border-color,
+		(0 - $border-width) ($button-depth + $border-width) 0 $border-color,
+		0 (0 - $border-width) 0 $border-color,
+		$border-width (0 - $border-width) 0 $border-color,
+		(0 - $border-width) (0 - $border-width) 0 $border-color
+	;
+
+	margin:{
+		top: $border-width;
+		right: $border-width;
+		bottom: $border-width + $button-depth;
+		left: $border-width;
+	};
+
+	&.is-active,
+	&:active{
+		transform: translateY($button-depth);
+	}
+
+	&.is-disabled,
+	&[disabled]{
+		transform: translateY(0);
+	}
+}
+
+
+@mixin taste-shadow($border-width: 4px, $button-depth: 10px, $active: 0, $color: $color-Atlantis, $border-color: black){
+	$active-depth: $button-depth;
+	$depth: 0;
+
+	@if to-bool($active){
+		$depth: $button-depth/1.3;
+		$active-depth: 0;
+	}
+
+	box-shadow:
+		0 $depth 0 $border-color,
+		inset 0 0 0 $border-width $border-color,
+		inset 0 ($border-width * 1.5) 0 rgba(255,255,255,0.1),
+		inset 0 (-($active-depth + $border-width)) 0 $color,
+		0 0.25em 0.25em hsla(0,0%,0%,0.05)
+	;
+
+	&.is-active,
+	&:active{
+		transform: translateY($depth);
+	}
+
+	&.is-disabled,
+	&[disabled]{
+		transform: translateY(0);
+	}
+}
+
+@mixin item-shadow($border-width: 4px, $button-depth: 2px, $active: 0, $color: $color-DoveGray, $border-color: $color-Black20){
+	$depth: $button-depth;
+
+	border: $border-width solid transparent;
+
+	box-shadow:
+		-1px $depth 0 $color,
+		-1px ($button-depth + $border-width) 0 $border-color
+	;
+
+	margin:{
+		top: $border-width;
+		right: $border-width;
+		bottom: $border-width + $button-depth;
+		left: $border-width;
+	};
+
+	&.is-active,
+	&:active{
+		border-color: $color-Atlantis;
+	}
+
+	&.is-disabled,
+	&[disabled]{
+		background: linear-gradient($color-Seashell, $color-ShadyLady20);
+		border-color: $color-Gallery;
+	}
+}

@@ -1,0 +1,38 @@
+﻿@model EDA.Poc.Web.ViewModels.AvaliarViewModel
+<article>
+    <figure class="col-1 col-sm-2 col-tablet-3">
+        <img src="@Model.ImagemDoUsuario" alt="@Model.NomeDoUsuario">
+    </figure>
+    <div class="col-11 col-sm-10 col-tablet-9">
+        @using (Html.BeginForm("Avaliar", "Conteudo"))
+        {
+            @Html.HiddenFor(x => x.IdDoUsuario)
+            @Html.HiddenFor(x => x.IdDoConteudo)
+            <div class="col-12">
+                @Html.TextAreaFor(x => x.Conteudo, new { @class="input-default s-10 inline text-area" })
+                @Html.ValidationMessageFor(x => x.Conteudo)
+            </div>
+            <div class="avalie col-6 col-tablet-12" data-avaliacao="@Model.Avaliacao">
+                <p>
+                    <span class="estrela" data-avaliacao="1"></span>
+                    <span class="estrela" data-avaliacao="2"></span>
+                    <span class="estrela" data-avaliacao="3"></span>
+                    <span class="estrela" data-avaliacao="4"></span>
+                    <span class="estrela" data-avaliacao="5"></span>
+                </p>
+                <p>
+                    <span data-toggle-avaliacao="1">Precisa Melhorar Muito</span>
+                    <span data-toggle-avaliacao="2">Precisa Melhorar</span>
+                    <span data-toggle-avaliacao="3">OK</span>
+                    <span data-toggle-avaliacao="4">Bom</span>
+                    <span data-toggle-avaliacao="5">Excelente</span>
+                </p>
+                @Html.HiddenFor(x => x.Avaliacao)
+                @Html.ValidationMessageFor(x => x.Avaliacao)
+            </div>
+            <div class="col-6 col-tablet-12 text-right action">
+                <button class="btn-default inline col-tablet-12" type="submit"><i class="fa fa-check-circle"></i> Enviar Avaliação!</button>
+            </div>
+        }
+    </div>
+</article>

@@ -1,0 +1,279 @@
+﻿%base-elements {
+	display: block;
+	text-align:center;
+	border-radius: $border-radius-destaques;
+	color: white;
+
+	&.inline {
+		display: inline-block;
+	}
+	&.full {
+		width: 100%;
+	}
+}
+
+.container-tooltip {
+	position: relative;
+	min-width: 60px;
+
+	.tooltip {
+		position: absolute;
+		top: 100%;
+		margin-left: -200%;
+		width: 400%;
+		background-color: rgba($primary-color, 0.85);
+		border-radius: 5px;
+		padding: 10px;
+		margin-top: 20px;
+		z-index: 10000;
+		opacity: 0;	
+		transition: opacity .5s linear;
+
+		&.active {
+			opacity: 1;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			border-bottom: 15px solid rgba($primary-color, 0.85);
+			border-top: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-left: 15px solid transparent;
+		}
+
+		span {
+			font-size: 16px;
+			color: white;
+			font-weight: 100;
+		}
+	}
+
+	&:hover {
+		.tooltip {
+			opacity: 1;
+		}
+	}
+}
+
+.destaque-1 { 
+	@extend %base-elements;
+
+	border: solid 1px $silver;
+	padding: 10px 0;
+	color: $default-color;
+}
+
+.destaque-2 {
+	@extend %base-elements;
+
+	background-color: $secondary-color;
+}
+
+.destaque-3 {
+	@extend %base-elements;
+
+	background-color: $secondary-color;
+	padding: 5px 8px;
+	box-shadow: none;
+	border: none;
+}
+
+%base-inputs {
+	@for $i from 1 through 10 {
+		&.s-#{$i} {
+			width: (10% * $i) !important;
+		}
+	}
+
+	color: $default-color;
+	text-align: left;
+	padding: 5px;
+}
+
+.input-default {
+	@extend %base-elements;
+	@extend %base-inputs;
+
+	border: solid 2px $silver;
+
+	&.text-area {
+		resize: none;
+		min-height: 100px;
+	}
+
+	&.inline {
+		display: inline-block;
+	}
+}
+
+.select-default {
+	@extend %base-elements;
+	@extend %base-inputs;
+
+	background-color: $silver;
+	color: white;
+	border: none;
+
+	&:hover,
+	&:active {
+		cursor: pointer;
+	}
+
+	option {
+		&:first-child {
+			border-top-right-radius: $border-radius-destaques;
+			border-top-left-radius: $border-radius-destaques;
+		}
+	}
+}
+
+.btn-default {
+	@extend %base-elements;
+
+	padding: 10px 10px;
+	background-color: $button-primary-color;
+	border: none;
+	border-bottom: solid 4px $button-primary-border-color;
+
+	&.inline {
+		margin: 0 5px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&:hover {
+		background-color: $button-primary-hover-color;
+	}
+
+	&:active {
+		border-bottom: solid 2px $button-primary-border-color;
+		transform: translateY(2px);
+		margin-bottom: 2px;
+	}
+}
+
+.radio-default {
+	position: relative;
+	width: 20px;
+	height: 20px;
+
+	&:before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		background-color: $body-color;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 100%;
+		border: solid 1px $silver;
+	}
+
+	&:checked {
+		&:after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			background-color: $silver;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			border-radius: 100%;
+		}
+	}
+}
+
+.nav-pills-default {
+	border-bottom: solid 1px $silver;
+	padding: 0 10px;
+
+	.pill-default {
+		@extend %base-inputs;
+
+		display:inline-block;
+		color: $secondary-color;
+		padding: 15px;
+
+		&.active {
+			transform: TranslateY(1px);
+			background-color: $body-color;
+			color: $default-color;
+
+			padding: 20px;
+
+			border-top-left-radius: $border-radius-destaques;
+			border-top-right-radius: $border-radius-destaques;
+			border-top: solid 1px $silver;
+			border-left: solid 1px $silver;
+			border-right: solid 1px $silver;
+			border-bottom: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+@mixin table-default($th-color, $tr-color-1, $tr-color-2) {
+	width: 100%;
+
+	th,
+	td{
+		padding: 5px;
+		text-align: center;
+
+		&:first-child {
+			border-left: none;
+		}
+	}
+	th{
+		background-color: $th-color;
+	}
+	tr{
+		&:nth-child(n){
+			background-color: $tr-color-1;
+		}
+		&:nth-child(2n){
+			background-color: $tr-color-2;
+		}
+	}
+}
+
+.table-gap{
+	padding: 25px;
+	background-color: $body-color;
+	margin: 10px;
+}
+
+.table-compra {
+	@include table-default(#95CCE8, #E4F2F9, #CAE5F4);
+
+	th,
+	td{
+		width: 50%;
+		border-left: solid 2px white;
+	}
+}
+
+.table-admin {
+	@include table-default($gallery, $seashell, $body-color);
+
+	th,
+	td {
+		padding: 15px 0;
+	}
+
+	tr {
+		border-bottom: solid 2px $alto;
+	}
+}

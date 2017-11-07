@@ -1,0 +1,161 @@
+﻿.ov-auto {
+	overflow: auto;
+}
+
+section.ov-auto {
+	padding-bottom: 5px;
+}
+
+.ov-initial {
+	overflow: initial;
+}
+
+main.ov-initial,
+section.ov-initial {
+	overflow: initial;
+}
+
+.hide {
+	display: none !important;
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i}{
+		@include column($i/12)
+
+		&.no-right {
+			margin-right: 0;
+		}
+
+		&.no-float {
+			float: none;
+		}
+	}
+}
+
+@for $i from 1 through 12 {
+	.col-offset-#{$i} {
+		margin-left: (100% / 12) * $i ;
+	}
+}
+
+@for $i from 1 through 12 {
+	@media only screen and (max-width : 992px) {
+		.col-sm-#{$i}{
+			@include column($i/12)
+
+			&.no-right-sm{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@for $i from 1 through 12 {
+	@media only screen and (max-width : 992px) {
+		.col-sm-tablet-#{$i} {
+			margin-left: (100% / 12) * $i ;
+		}
+	}
+}
+
+@for $i from 1 through 12 {
+	@media only screen and (max-width : 768px) {
+		.col-tablet-#{$i}{
+			@include column($i/12)
+
+			&.no-right-tablet{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@for $i from 1 through 12 {
+	@media only screen and (max-width : 768px) {
+		.col-offset-tablet-#{$i} {
+			margin-left: (100% / 12) * $i ;
+		}
+	}
+}
+
+@for $i from 1 through 12 {
+	@media only screen and (max-width : 480px) {
+		.col-mobile-#{$i}{
+			@include column($i/12)
+
+			&.no-right-phone{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@for $i from 1 through 12 {
+	@media only screen and (max-width : 480px) {
+		.col-offset-mobile-#{$i} {
+			margin-left: (100% / 12) * $i ;
+		}
+	}
+}
+
+.relative {
+	position: relative;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+$align-points: (bottom, bottom), (top, top), (center, middle);
+
+@each $name, $align-point in $align-points {
+	.v-align-#{$name} {
+		display:block;
+		font-size:0%;
+
+		&:before {
+			content: '';
+			height: 100%;
+			width: 0;
+		}
+
+		&:before,
+		& > * { 
+			display:inline-block;
+			vertical-align: $align-point;
+			float: none;
+			font-size: initial;
+		}
+
+		@at-root {
+			#{&}-absolute {
+				top:50%;
+				position:absolute;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+
+.field-validation-error {
+	color: red;
+	font-size: 1rem;
+	display:block;
+
+	&.inline {
+		display: inline-block;
+	}
+}
+
+.input-validation-error {
+	border: solid 2px red;
+} 

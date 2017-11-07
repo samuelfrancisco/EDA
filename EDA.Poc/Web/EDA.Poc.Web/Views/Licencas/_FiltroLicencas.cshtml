@@ -1,0 +1,34 @@
+﻿@model EDA.Poc.Web.ViewModels.FiltroDeLicencasViewModel
+
+<nav class="ov-auto filtros">
+    <h2>Filtros</h2>
+    <p class="v-align-bottom">
+        @using(Html.BeginForm("ObterDetalhesDasLicencasComFiltros", "Licencas")) {
+            <span role="input-group" class="col-3 col-sm-6 col-mobile-12 no-right-phone">
+                @Html.LabelFor(x => x.PalavraChave)
+                @Html.TextBoxFor(x => x.PalavraChave, new { @class = "input-default s-10" })
+            </span>
+            <span role="input-group" class="col-3 col-sm-6 col-mobile-12 no-right-sm">
+                @Html.LabelFor(x => x.Categoria)
+                @Html.DropDownListFor(x => x.Categoria, new SelectList(new List<string> { "Categoria Padrão" }), new { @class = "select-default s-10"})
+            </span>
+            <span role="input-group" class="col-4 col-sm-9 col-mobile-12 no-right-phone">
+                <label for="categoria">Período de Utilização</label>
+                @Html.TextBoxFor(x => x.DataDeInicioDeUtilizacao, new { @class = "calendario col-5 input-default inline" , @data_value=DateTime.Today})
+                <span class="col-1 text-center">à</span>
+                @Html.TextBoxFor(x => x.DataDeFimDeUtilizacao, new { @class = "calendario col-5 no-right input-default inline" , @data_value=DateTime.Today})
+            </span>
+            <span role="action-group" class="col-2 col-sm-3 col-mobile-12 no-right">
+                <button type="submit" class="btn-default inline"><i class="fa fa-search"></i></button>
+                @*<button class="btn-default inline clear-filtro"><i class="fa fa-times"></i></button>*@
+            </span>
+            <span role="input-group" class="col-12 no-right">
+                <label>Renovação automática</label>
+                @Html.RadioButtonFor(x => x.RenovacaoAutomatica, true, new { @id="habilitada", @class="radio-default" })
+                <label for="habilitada" class="inline"> Habilitada</label>
+                @Html.RadioButtonFor(x => x.RenovacaoAutomatica, false, new { @id="desabilitada", @class="radio-default" })
+                <label for="desabilitada" class="inline"> Desabilitada</label>
+            </span>
+        }
+    </p>
+</nav>

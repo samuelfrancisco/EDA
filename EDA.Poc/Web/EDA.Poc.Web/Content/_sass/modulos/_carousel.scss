@@ -1,0 +1,97 @@
+﻿%carousel-parent {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+
+	&.round-border {
+		border-radius: $border-radius-default;
+	}
+}
+
+.carousel {
+	@extend %carousel-parent ;
+
+	&.shadow {
+		box-shadow: $box-shadow-default;
+	}
+
+	ul {
+		@extend %carousel-parent;	
+
+		&.shadow {
+			box-shadow: $box-shadow-default;
+		}
+	}
+
+	.items-wrapper {
+		white-space: nowrap;
+		transition: .5s all linear;
+		font-size: 0%;
+		overflow-x: hidden;
+		overflow-y: auto;
+
+		.item-carousel {
+			display:inline-block;
+		}
+	}
+
+	$base-width-carousel-arrow: 30px !default;
+
+	.next,
+	.prev{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: rgba(0, 0, 0, 0.5);
+		color: white;
+		width: $base-width-carousel-arrow;
+		height: #{$base-width-carousel-arrow * 2};
+		line-height: #{$base-width-carousel-arrow * 2};
+		z-index: 10;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.next {
+		right: 0;
+		border-radius: $base-width-carousel-arrow 0 0 $base-width-carousel-arrow;
+		text-align: right;
+	}
+
+	.prev {
+		left: 0;
+		border-radius: 0 $base-width-carousel-arrow $base-width-carousel-arrow 0;
+		text-align: left;
+	}
+
+	figure {
+		position: relative;
+		height: auto;
+	}
+
+	figcaption {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		min-width: 40%;
+		max-width: 60%;
+		min-height: 20%;
+		background-color: rgba(0, 0, 0, 0.5);
+		color:white;
+		font-size: 1rem;
+		text-align: center;
+		padding: 10px 0;
+
+		h3 {
+			margin:5px;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	}
+}

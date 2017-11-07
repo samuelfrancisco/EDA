@@ -1,0 +1,53 @@
+﻿//cores configuraveis por cliente
+$primary-color: #002664; //#EBAC12
+$secondary-color: #0082C8; //#11958B
+$tertiary-color: #EC6C1F; //#EC6C1F
+$default-color: #7F7F7F;
+$body-color: #F7F7F7;
+
+//cores dos botoes
+$button-primary-color: #0082C8;
+$button-primary-hover-color: #0070AD;
+$button-primary-border-color: #006399;
+
+//icons
+$down-color: #E32523;
+$up-color: #68D500;
+$star-color: #F9D00D;
+$check-color: #F7CE09;
+
+//cores padrão  http://chir.ag/projects/name-that-color/
+$silver: #CACACA;
+$alto: #D3D3D3;
+$gallery: #EDEDED;
+$seashell : #F0F0F0; 
+$bright-green: #6CD500;
+$pistachio: #97CA00;
+$corn: #E3BC04;
+$carrot-orange: #EB8F21;
+$alizarin-crimson: #E42924;
+
+
+$border-radius-default: 15px;
+$border-radius-destaques: 5px;
+$box-shadow-default: 0 0 8px rgba(150, 150, 150, 0.7);
+
+.star-color {
+	color: $star-color;	
+}
+
+.primary-color {
+	color: $primary-color;
+}
+
+.secondary-color {
+	color: $secondary-color;
+}
+
+.tertiary-color {
+	color: $tertiary-color;
+}
+
+.default-color {
+	color: $default-color;
+}

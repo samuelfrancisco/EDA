@@ -1,0 +1,55 @@
+﻿@using System.Web.Optimization;
+@using System.Configuration;
+
+@Html.Partial("../Shared/_UsuarioMenu")
+
+<main>
+    <section>
+        <h2>Lançamentos</h2>
+        <ul class="lancamentos carousel round-border shadow">
+            @Html.Partial("_Loading")
+        </ul>
+    </section>
+    <section class="section-recomendados with-toggle ov-auto">
+        <div class="header-action">
+            <h2>Recomendados</h2>    
+            <nav class="secondary-color hide">
+                <input type="radio" name="toggle-recomendado" data-toggle="recomendado" id="recomendado" checked="checked"/>
+                <label for="recomendado">Visão de Admin</label>
+                <input type="radio" name="toggle-recomendado" data-toggle="recomendado-equipe" id="recomendado-equipe" />
+                <label for="recomendado-equipe">Visão de Gestor</label>
+            </nav>
+        </div>
+        <ul class="recomendados default horizontal toggle-container active" data-toggle="recomendado">
+            @Html.Partial("_Loading")
+        </ul>
+        <ul class="recomendados-equipe default horizontal toggle-container " data-toggle="recomendado-equipe">
+            @Html.Partial("_Loading")
+        </ul>
+    </section>
+    <section class="ov-auto">
+        <ul class="destaques default vertical">
+
+        </ul>
+    </section>
+    <section class="ov-auto">
+        <h2>Mais populares</h2>
+        <ul class="mais-populares default horizontal">
+            @Html.Partial("_Loading")
+        </ul>
+    </section>
+</main>
+
+@section Scripts
+{
+	<!-- Vendors -->
+    @Scripts.Render("~/Content/js/vendors/jquery/all")
+    @Scripts.Render("~/Content/js/vendors/jcarousellite/all")
+
+    <!-- Core -->
+    @Scripts.Render("~/Content/all")
+
+    <!-- Tela -->
+    <script src="~/Content/js/PaginaInicial/pagina-inicial-ui.js"></script>
+    <script src="~/Content/js/PaginaInicial/pagina-inicial.js"></script>
+}

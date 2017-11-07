@@ -1,0 +1,130 @@
+﻿@model EDA.Poc.Pagamentos.ReadModel.PaginaDeDetalhesDoConteudo.PaginaDeDetalhesDoConteudo
+@using EDA.Poc.Web.ViewModels;
+@using System.Web.Optimization;
+
+@{
+
+    var idDoUsuario = Guid.Parse("a59e8e09-6669-4412-aa7d-9a3b2e82adb1");
+
+    var idioma = "pt-BR";
+
+    var minhaAvaliacao = Model.Resenhas.SingleOrDefault(x => x.IdDoUsuario == idDoUsuario);
+    var minhaAvaliacaoModel = new AvaliarViewModel(Model.IdDoConteudo, idDoUsuario, "E-Guru", minhaAvaliacao);
+
+    var comprarConteudoViewModel = new DadosDeCompraViewModel(Model.Precos);
+}
+
+@Html.Partial("../Shared/_UsuarioMenu")
+
+<div role="wrapper" data-id-conteudo="@ViewBag.IdDoConteudo">
+    <main role="details" class="
+        @(((Model.MaisDoFornecedor == null && Model.MaisDoFornecedor.Any()) || (Model.Semelhantes != null && Model.Semelhantes.Any()))
+              ? "col-9"
+              : "col-12")
+        col-sm-12 no-right">
+        
+        <section class="detalhes ov-auto">
+            @Html.Partial("_Detalhes", Model.Detalhes.Single(x => x.SiglaDoIdioma == idioma))
+        </section>
+        <section>
+            <h2>Previews</h2>
+            <ul class="competencias carousel previews">
+                @Html.Partial("_ListaPreviews", @Model.Previews)
+            </ul>
+        </section>
+        @if (Model.CompetenciasParaOCliente != null && Model.CompetenciasParaOCliente.Any())
+        {
+            <section class="section-competencias with-toggle relative">
+                <div class="header-action">
+                    <h2>Competencias</h2>
+                    <nav class="secondary-color hide">
+                        <input type="radio" name="toggle-competencia" data-toggle="competencia" id="competencia" checked="checked" />
+                        <label for="competencia">Visão de Admin</label>
+                        <input type="radio" name="toggle-competencia" data-toggle="competencia-equipe" id="competencia-equipe" />
+                        <label for="competencia-equipe">Visão de Gestor</label>
+                    </nav>
+                </div>
+                <table >
+                    <thead>
+                        <tr class="secondary-color">
+                            <th></th>
+                            <th>Gaps</th>
+                            <th>Medidas <i class="fa fa-question-circle"></i></th>
+                            <th>Trabalhadas <i class="fa fa-question-circle"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody class="toggle-container active competencia" data-toggle="competencia">
+                        @Html.Partial("_ListaCompetencias", Model.CompetenciasParaOCliente)
+                    </tbody>
+                    <tbody class="toggle-container competencia-equipe" data-toggle="competencia-equipe">
+                        @Html.Partial("_ListaCompetencias", Model.CompetenciasParaSuaEquipe)
+                    </tbody>
+                </table>    
+            </section>
+        }
+        <section class="ov-auto with-action">
+            <h2>Resenhas</h2>
+            <div class="consolidado-resenha v-align-center">
+                @Html.Partial("_ConsolidadoAvaliacoes", Model.ConsolidadoAvaliacao)
+            </div>
+        </section>
+        <section>
+            <h2>Escrever Resenha</h2>
+            <div class="minha-avaliacao ov-auto">
+                @Html.Partial("_MinhaAvaliacao", minhaAvaliacaoModel)
+            </div>
+        </section>
+        <section class="ov-auto">
+            <ul class="resenhas flex vertical">
+                @Html.Partial("_ListaResenhas", Model.Resenhas)
+            </ul>
+        </section>
+    </main>
+
+    <aside class="col-3 col-sm-12 ">
+        @if (Model.Semelhantes != null && Model.Semelhantes.Any())
+        {
+            <section class="ov-auto">
+                <h2>Semelhantes <i class="fa fa-arrow-circle-right"></i></h2>
+                <ul class="default vertical semelhantes">
+                    @Html.Partial("_ListaSemelhantes", Model.Semelhantes)
+                </ul>
+            </section>
+        }
+        @if (Model.MaisDoFornecedor != null && Model.MaisDoFornecedor.Any())
+        {
+            <section class="ov-auto">
+                <h2>Mais do fornecedor <i class="fa fa-arrow-circle-right"></i></h2>
+                <ul class="default vertical mais-do-fornecedor">
+                    @Html.Partial("_ListaMaisDoFornecedor", Model.MaisDoFornecedor)
+                </ul>
+            </section>
+        }
+    </aside>
+</div>
+
+@Html.Partial("_ComprarConteudo", comprarConteudoViewModel)
+
+@section Styles {
+    @Styles.Render("~/Content/js/vendors/pickadate/themes/all")
+}
+
+@section Scripts
+{
+    <!-- Vendors -->
+    @Scripts.Render("~/Content/js/vendors/jquery/all")
+    @Scripts.Render("~/Content/js/vendors/jcarousellite/all")
+
+    <!-- Core -->
+    @Scripts.Render("~/Content/all")
+
+    <!-- PickaDate -->
+    @Scripts.Render("~/Content/js/vendors/pickadate/all")
+
+    <!-- Fool Proof Validation -->
+    @Scripts.Render("~/Content/js/vendors/foolproof/all")
+
+    <!-- Tela -->
+    <script src="~/Content/js/Conteudo/detalhe-ui.js"></script>
+    <script src="~/Content/js/Conteudo/detalhe.js"></script>
+}

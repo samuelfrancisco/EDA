@@ -1,0 +1,10 @@
+﻿
+@foreach (var competencia in Model)
+{
+    <tr>
+        <td><strong>@competencia.Titulo</strong></td>
+        <td><span data-avaliacao="@competencia.Gaps" class="down fa primary-color"></span></td>
+        <td><span data-avaliacao="@competencia.Medidas" class="check fa primary-color"></span></td>
+        <td><span data-avaliacao="@competencia.Trabalhadas" class="up fa primary-color"></span></td>
+    </tr>
+}

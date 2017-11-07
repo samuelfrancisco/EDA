@@ -1,0 +1,236 @@
+﻿header,
+section {
+	
+	&.no-top {
+		margin-top: 0;
+	}
+
+	> section {
+		padding: 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.loading {
+		img {
+			width:initial;
+		}
+	}
+
+	article {
+		color: $default-color;
+
+		a{
+			color: inherit;
+		}
+
+		p {
+			margin: 10px 0;
+
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+	}
+
+	& h2{
+		border-bottom: 2px solid $alto;	
+		color: $secondary-color;
+		margin-top: 0;
+		font-weight: 100;
+	}
+	& h3{
+		font-weight: 100;
+	}
+
+	&.well-destaque {
+		background-color: $secondary-color;
+		border-radius: $border-radius-destaques;
+		color: white;
+		padding: 5px 20px;
+	}
+
+	&.well {
+		background-color: $seashell;
+		border-radius: $border-radius-destaques;
+		padding: 20px 20px;
+		color: $default-color;
+	}
+}
+
+nav {
+	&[role=filter] {
+		background-color: $seashell;
+		padding: 5px 20px;
+
+		p {
+			margin: 20px 0;
+		}
+	}
+}
+
+[role="action-group"] {
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+[role="input-group"] {
+	margin-bottom: 15px;
+
+	> * {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	label {
+		display: block;
+		font-weight: bold;
+
+		&.inline {
+			display: inline-block;
+		}
+	}
+}
+
+article,
+section {
+	&.with-action,
+	&.with-toggle {
+		.header-action {
+			border-bottom: 2px solid $silver;	
+			overflow: auto;
+			margin-bottom: 20px;
+
+			& > h1 {
+				border-bottom: none;
+				color: $primary-color;  
+				float: left;
+				margin: 0;
+			}
+			& > h2 {
+				border-bottom: none;	
+				color: $secondary-color;
+				float: left;
+				margin: 0;
+			}
+
+			nav {
+				float: right;
+			}
+		}
+	}
+
+	&.with-toggle {
+		.toggle-container {
+			visibility: hidden;
+			position: absolute;
+			opacity: 0;
+			transition: all 0s linear;
+			width: 90%;
+
+			&.active {
+				position: relative;
+				visibility: visible;
+				opacity: 1;
+				width: initial;
+				transition: all .2s linear;
+				overflow: normal;
+			}
+		}	
+	}
+}
+
+//Containers
+
+header {
+	padding-top: 20px;
+	& > h1 {
+		@include center(nill, 5%);
+		margin-bottom: 0;
+
+		> div {
+			margin-bottom: 15px;
+			padding: 3px;
+		}
+
+		div {
+			display: inline-block;
+			vertical-align: bottom;
+
+			span {
+				font-size: 1.125rem;
+				display: block;
+				color: $primary-color;
+			}
+
+			a {
+				text-decoration: none;
+				font-size: 1rem;
+				color: $secondary-color;
+			}
+		}
+
+		img {
+			max-height:60px;
+			display: inline-block;
+			
+			&.image-usuario {
+				box-shadow: $box-shadow-default;
+			}
+		}
+	}
+}
+
+div[role=wrapper] {
+	@include center(nill, 5%);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	overflow:auto;
+	position: relative;
+}
+
+
+
+section {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	@include center(nill, 5%);
+
+	> section {
+		@include center(nill);
+		margin-bottom: 0;
+	}
+	
+	img {
+		width: 100%;
+	}
+}
+
+aside {
+	margin-bottom: 30px;
+}
+
+main {
+	overflow:auto;
+	
+	&[role=details] {
+		background-color: white;
+		box-shadow: $box-shadow-default;
+		
+		section {
+			@include center(nill, 2%);
+			> section {
+				@include center(nill);
+			}
+		}
+	}
+
+	> section {
+		&.last-child{
+			padding-bottom: 20px;
+		}
+	}
+}

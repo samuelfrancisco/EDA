@@ -1,0 +1,57 @@
+﻿section[role=modal] {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 0;
+	z-index: 20;
+	
+	&.active {
+		display: block;
+	}
+	
+	[role=modal-container] {
+		padding: 20px;
+		margin-top: 100px;
+		width: 50%;
+		display: inline-block;
+		background-color: white;
+		overflow: auto;
+		text-align: left;
+		position: relative;
+
+		@include screenX(1px, 668px){
+			width: 100%;
+		}
+		@include screenX(667px, 1024px){
+			width: 75%;
+		}
+		
+		article {
+			margin: 15px 0;
+		}
+
+		.header-action {
+			padding-bottom: 10px;
+		}
+
+		h5 {
+			margin: 5px 0;
+		}
+
+		h5,
+		label {
+			color: $secondary-color;
+		}
+
+		.preco {
+			display: inline-block;
+			padding: 5px;
+		}
+	}
+} 

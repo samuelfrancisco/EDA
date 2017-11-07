@@ -1,0 +1,185 @@
+﻿// Remove any units from a number.
+// @usage: width: strip-units(245px) +px;
+@function strip-units($value, $force: false) {
+	@if type-of($value) == "number" {
+		@return $value / ($value * 0 + 1);
+	} @else if $force != false {
+		@return 0;
+	}
+	@warn "strip-units: `#{$value}` is `#{type-of($value)}`, not a number";
+	@return $value;
+}
+
+// Converts a value to a boolean
+// @usage to-bool($value);
+@function to-bool($value) {
+	@return not ($value == nil or $value == "" or $value == 0 or $value == () or $value == false);
+}
+
+// Converts a unit to a percent directly
+// @usage percent(10px); (!= percentage work's with NaN values)
+@function percent($value) {
+	$value: strip-units($value);
+	$result: if($value == 0, 0, $value * 1%);
+	@return if($result == 0%, 0, $result);
+}
+
+// Calculate rem from a px value
+// @usage: font-size: rem(32);
+@function rem($value) {
+	$value: strip-units($value);
+	$result: ($value / 16) * 1rem;
+	@return $result;
+}
+
+// Calculate em from a px value
+// @usage: font-size: em(32);
+@function em($value) {
+	$value: strip-units($value);
+	$result: ($value / 16) * 1em;
+	@return $result;
+}
+
+// Calculate point from a px value
+// @usage: font-size: pt(32);
+@function pt($value) {
+	$value: strip-units($value);
+	$result: ($value * (12 / 16)) * 1pt;
+	@return $result;
+}
+
+// Mix a percentage of white with a color
+// @usage: tint(#0000ff, 15%);
+@function tint($color, $percent: 15%) {
+	@return mix(white, $color, $percent);
+}
+
+// Mix a percentage of black with a color
+// @usage: shade(#0000ff, 15%);
+@function shade($color, $percent: 15%) {
+	@return mix(black, $color, $percent);
+}
+
+// Generate a random hex or rgb color from rgb values
+// @usage: random-color(50, 150, 0.75);
+@function random-color($min: 0, $max: 255, $alpha: 1) {
+	$min: if($min < 0, -1, $min - 1);
+	$max: if($max > 255, 256, $max + 1);
+	$r: random($max) + $min;
+	$g: random($max) + $min;
+	$b: random($max) + $min;
+	@return rgba($r, $g, $b, $alpha);
+}
+
+// Reverse a string
+// @usage: background-color: reverse-string(eulb);
+@function reverse-string($string) {
+	$reversed-string: '';
+	@for $id from 1 through str-length($string) {
+		$char: str-slice($string, $id, $id);
+		$reversed-string: "#{$char}#{$reversed-string}";
+	}
+	@return #{$reversed-string};
+}
+
+// Get the opposite direction to a given value
+// @usage: margin-#{opposite-direction($side)}: 10px;
+@function opposite-direction($direction) {
+	$direction: to-lower-case($direction);
+	@if $direction == "top" {
+		@return bottom;
+	} @else if $direction == "right" {
+		@return left;
+	} @else if $direction == "bottom" {
+		@return top;
+	} @else if $direction == "left" {
+		@return right;
+	} @else if index("ltr" "LTR", $direction) {
+		@return rtl;
+	} @else if index("rtl" "RTL", $direction) {
+		@return ltr;
+	}
+	@warn "opposite-direction: `#{$direction}` is not a direction; please make sure your direction is top, right, bottom, left, ltr or rtl.";
+	@return false;
+}
+
+// Replaces the nth item in a list.
+// @usage: $ratios: set-nth($ratios, 0, nth($ratios, 1) * -1);
+@function replace-nth($list, $index, $value) {
+  // Fallback for Sass 3.2
+	@if function-exists("set-nth") != true {
+		$result: ();
+		$index: if($index < 0, length($list) + $index + 1, $index);
+		@for $id from 1 through length($list) {
+			$result: append($result, if($id == $index, $value, nth($list, $id)));
+		}
+		@return $result;
+	}
+	// Sass 3.3+
+	@return set-nth($list, $index, $value);
+}
+
+// Reverse a list
+// @usage: $ratios: reverse-list((4, 3, 2, 1));
+@function reverse-list($list) {
+	// Fallback for Sass 3.2
+	@if function-exists("set-nth") != true {
+		$result: ();
+		@for $id from length($list) * -1 through -1 {
+			$item: nth($list, abs($id));
+			@if length($item) > 1 and $recursive {
+				$result: append($result, reverse-list($item, $recursive));
+			} @else {
+				$result: append($result, $item);
+			}
+		}
+		@return $result;
+	}
+	// Sass 3.3+
+	@for $id from 1 through ceil(length($list)/2) {
+		$tmp: nth($list, $id);
+		$tmp: if(length($tmp) > 1 and $recursive, reverse($tmp, $recursive), $tmp);
+		$list: set-nth($list, $id, nth($list, -$id));
+		$list: set-nth($list, -$id, $tmp);
+	}
+	@return $list;
+}
+
+// Work out the column widths based on the ratio and gutter sizes
+// @usage: $column-widths: get-column($ratios, $gutter);
+@function get-column($ratios: 1, $gutter: $layout-GutterWidth, $parent-first: $layout-ParentFirst) {
+	$ratios: if(not $parent-first, reverse-list($ratios), $ratios);
+	$width: 100;
+	@each $ratio in $ratios {
+		$gutter: $gutter / $width * 100;
+		$width: 100 * $ratio - $gutter + $ratio * $gutter;
+	}
+	@return $width $gutter;
+}
+
+// Get the width of a column and nothing else
+@function column-width($ratios: 1, $gutter: $layout-GutterWidth) {
+	@return percent(nth(get-column($ratios, $gutter), 1));
+}
+
+// Get the gutter size of a column and nothing else
+@function column-gutter($ratios: 1, $gutter: $layout-GutterWidth) {
+	@return percent(nth(get-column($ratios, $gutter), 2));
+}
+
+// Get the set layout direction for the project
+// @usage: $side: get-layout-direction();
+@function get-layout-direction() {
+	// @return if($layout-Direction == "RTL", right, left);
+	@return left;
+}
+
+// Get percentage from a given ratio
+// @usage: $span-width: get-span(1);
+@function get-span($ratio: 1) {
+	$ratio: strip-units($ratio, $force:true);
+	@return $ratio * 100;
+}
+
+// @see also: http://sass-lang.com/documentation/Sass/Script/Functions.html#adding_custom_functions
+

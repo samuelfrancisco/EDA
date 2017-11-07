@@ -1,0 +1,133 @@
+﻿$icons: (
+	(estrelas): ('\f005', '\f123',	'\f006', $star-color, #F9D00D),
+	(down): ('\f0ab', '\f0ab', '\f0ab', $down-color, $silver),
+	(check): ('\f00c', '\f00c', '\f00c', $check-color, $silver),
+	(up): ('\f0aa', '\f0aa', '\f0aa', $up-color, $silver),
+);
+
+.avalie {
+	font-size: 0;
+
+	.estrela {
+		font-family: fontAwesome;
+		font-size: 1.25rem;
+		padding: 3px;
+
+		&:before {
+			content: '\f006';
+			color: $default-color;
+		}
+
+		&.active {
+			&:before {
+				color: $star-color;
+				content: '\f005';
+			}	
+		}
+
+		&.hovered {
+			&:before {
+				color: $secondary-color;
+				content: '\f005';
+			}
+		}
+
+		&:hover{ 
+			cursor: pointer;
+		}
+	}
+
+	[data-toggle-avaliacao] {
+		visibility: hidden;
+		color: $secondary-color;
+		transition: all .2s linear;
+
+		&.active {
+			font-size: 1.25rem;
+			visibility: visible;
+		}
+	}
+}
+
+@each $icon, $data in $icons {
+	.#{$icon}.fa,
+	.#{$icon} {
+		margin: 5px 0;
+		display: block;
+
+		white-space: nowrap;
+
+		&.inline{
+			display: inline;
+		}
+
+		&[class*=av] {
+			&:before {
+				@if nth($data,4) != 'nil' {
+					color: nth($data,4);
+				}
+			}
+			&:after {
+				@if nth($data,5) != 'nil' {
+					color: nth($data,5);
+				}
+			}
+		}
+
+		&.no-color {
+			&[class*=av] {
+				&:before {
+					@if nth($data,4) != 'nil' {
+						color: inherit;
+					}
+				}
+				&:after {
+					@if nth($data,5) != 'nil' {
+						color: inherit;
+					}
+				}
+			}
+		}
+
+		@for $i from 0 through 5 {
+			
+			$before: "";
+			@if $i > 0 {
+				@for $j from 1 through $i {
+					$before: $before + " " + nth($data, 1);
+				}
+			}
+
+			$after: "";
+			@if $i < 5 {
+				@for $j from 1 through (5 - $i) {
+					$after: $after + " " + nth($data, 3);
+				}
+			}
+
+			$after-5: "";
+			@if $i < 4 {
+				@for $j from 1 through (4 - $i) {
+					$after-5: $after-5 + " " + nth($data, 3);
+				}
+			}
+
+			&.av-#{$i}{
+				&:before {
+					content: $before; 
+				}
+				&:after {
+					content: $after;
+				}
+			}
+			&.av-#{$i}-5{
+				&:before {
+					content: $before + " " + nth($data,2); 
+				}
+				&:after {
+					content: $after-5;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,170 @@
+﻿.detalhes {
+	article {
+		padding: 0 2%;
+		
+		h4 {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.section-competencias {
+	table {
+		color: $silver;
+		width: 100%;
+
+		tr {
+			border-top: solid 1px $silver;
+			
+		}
+		thead tr{
+			&:first-child {
+				border-top: none;
+			}
+		}
+
+		th,
+		td {
+			width: 25%;
+			text-align: center;
+			border-left: solid 1px $silver;
+			padding: 10px 0;
+
+			&:first-child {
+				border-left: none;
+			}
+		}
+	}
+}
+
+.minha-avaliacao {
+	padding: 3px;
+
+	figure {
+		box-shadow: $box-shadow-default;
+	}
+
+	.action {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.avalie {
+		p {
+			display: inline-block;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+	}
+}
+
+.consolidado-resenha {
+	height:250px;
+	width: 100%;
+	
+	@media only screen and (max-width : 768px) {
+		height: auto;
+		text-align: center;
+	}
+
+	.badge {
+		border-radius: 100%;
+		border: solid 3px $silver;
+		text-align: center;
+		width: 200px;
+		height: 200px;
+		font-size: 1rem;
+		overflow: hidden;
+		position: relative;
+
+		@media only screen and (max-width : 768px) {
+			display: inline-block;
+			margin: 20px;
+		}
+
+		.badge-container {
+			@include align(both);
+
+			h1 {
+				font-size: 3.5rem;
+				color: $primary-color;
+				border: none;
+				margin: 0;
+			}
+
+			span {
+				margin: 15px;
+			}
+
+			p {
+				margin: 5px;
+				color: $default-color;
+
+				font-weight: bold;
+
+				&:first-child {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	article {
+		
+		margin-left: 30px;
+		width: calc(100% - 230px);
+		text-align: left;
+
+		&.col-tablet-12 {
+			@media only screen and (max-width : 768px) {
+				margin-left: 0;
+				width: 100%;
+			}
+		}
+		
+		ul li {
+			height: 30px;
+			line-height: 30px;
+			margin-bottom: 10px;
+			white-space: nowrap;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			span {
+				font-size: 1rem;
+			}
+
+			div[data-graph-bar]{
+				height: 100%;
+				margin-left: 10px;
+			}
+			
+			&:nth-child(1){
+				div[data-graph-bar]{
+					background-color: $bright-green;
+				}
+			}
+			&:nth-child(2){
+				div[data-graph-bar]{
+					background-color: $pistachio;
+				}
+			}
+			&:nth-child(3){
+				div[data-graph-bar]{
+					background-color: $corn;
+				}
+			}
+			&:nth-child(4){
+				div[data-graph-bar]{
+					background-color: $carrot-orange;
+				}
+			}
+			&:nth-child(5){
+				div[data-graph-bar]{
+					background-color: $alizarin-crimson;
+				}
+			}
+		}
+	}
+}
