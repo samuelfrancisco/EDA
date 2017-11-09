@@ -23,7 +23,7 @@ namespace EventStorePoc.Integrador
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Iniciando");
+            Console.WriteLine("Iniciando...");
 
             _eventStoreConnection = EventStoreConnection.Create(_tcpEndPoint);
 
@@ -39,7 +39,7 @@ namespace EventStorePoc.Integrador
 
             _eventStoreConnection.Close();
 
-            Console.WriteLine("Finalizando");
+            Console.WriteLine("Finalizando...");
         }
 
         public static void Iniciar(CancellationToken cancellationToken)
@@ -59,20 +59,31 @@ namespace EventStorePoc.Integrador
 
         private static void AtualizarAgencias()
         {
-            var agencias = ObterAgencias();
+            try
+            {
+                Console.WriteLine("Atualizando as agências...");
 
-            var agenciasEnviadas = ObterAgenciasEnviadas();
+                var agencias = ObterAgencias();
 
-            var novasAgencias = agencias.Where(x => agenciasEnviadas.All(y => x.Id != y.IdDaAgencia)).ToList();
+                var agenciasEnviadas = ObterAgenciasEnviadas();
 
-            RegistrarNovasAgencias(novasAgencias);
+                var novasAgencias = agencias.Where(x => agenciasEnviadas.All(y => x.Id != y.IdDaAgencia)).ToList();
 
-            var agenciasAlteradas = agencias
-                .Where(x => agenciasEnviadas.Any(y => x.Id == y.IdDaAgencia && (x.Nome != y.Nome || x.Status != y.Status)))
-                .ToList();
+                if (novasAgencias.Any())
+                    RegistrarNovasAgencias(novasAgencias);
 
-            RegistrarAgenciasAlteradas(agenciasAlteradas);
-        }        
+                var agenciasAlteradas = agencias
+                    .Where(x => agenciasEnviadas.Any(y => x.Id == y.IdDaAgencia && (x.Nome != y.Nome || x.Status != y.Status)))
+                    .ToList();
+
+                if (agenciasAlteradas.Any())
+                    RegistrarAgenciasAlteradas(agenciasAlteradas);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
 
         private static IEnumerable<Agencia> ObterAgencias()
         {
@@ -97,6 +108,8 @@ namespace EventStorePoc.Integrador
 
         private static void RegistrarNovasAgencias(List<Agencia> novasAgencias)
         {
+            Console.WriteLine("Registrando as novas agências...");
+
             var data = DateTime.UtcNow;
 
             using (var contexto = new IntegradorContex())
@@ -107,7 +120,7 @@ namespace EventStorePoc.Integrador
                     NomeDaAgencia = x.Nome,
                     StatusDaAgencia = x.Status
                 }));
-                
+
                 foreach (var agencia in novasAgencias)
                 {
                     contexto.AgenciasEnviadas.Add(new AgenciaEnviada
@@ -122,10 +135,12 @@ namespace EventStorePoc.Integrador
 
                 contexto.SaveChanges();
             }
-        }        
+        }
 
         private static void RegistrarAgenciasAlteradas(List<Agencia> agenciasAlteradas)
         {
+            Console.WriteLine("Registrando as agências alteradas...");
+
             var data = DateTime.UtcNow;
 
             using (var contexto = new IntegradorContex())
@@ -198,7 +213,7 @@ namespace EventStorePoc.Integrador
                 { "EventNamespace", @event.GetType().Namespace },
                 { "EventFullName", @event.GetType().FullName },
                 { "EventTypeName", @event.GetType().Name },
-                { "EventClrTypeName", @event.GetType().AssemblyQualifiedName }                
+                { "EventClrTypeName", @event.GetType().AssemblyQualifiedName }
             };
 
             var metadata = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(eventHeaders, _serializerSettings));
